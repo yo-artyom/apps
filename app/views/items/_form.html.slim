@@ -1,0 +1,31 @@
+= form_for(@item, :html => { :class => "cd-form floating-labels"} ) do |f|
+  -if @item.errors.any?
+     div class="error-message"
+       h2
+         = pluralize(@item.errors.count, "error")
+       ul
+         =@item.errors.full_messages.each do |message|
+           li
+             = message
+
+
+  div class="icon"
+    label  Название
+    br
+    = f.text_field :name, class: 'write'
+  div class="icon"
+    label Описание
+    br
+    = f.text_area :desc, class: 'write'
+  div class="icon"
+    label Картинка
+    br
+    = f.text_field :image_url, class: 'write'
+
+  div class="icon"
+    br
+    = f.select :app_type, Item::APP_TYPE,
+               prompt: 'Тип приложения'
+
+  .actions class="actions"
+    = f.submit
