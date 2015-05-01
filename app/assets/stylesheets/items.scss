@@ -3,7 +3,7 @@
   margin:0px;padding:0px;
   width:100%;
   box-shadow: 10px 10px 5px #888888;
-  border:1px solid #3f7f00;
+  border:1px solid #2c97de;
 
   -moz-border-radius-bottomleft:0px;
   -webkit-border-bottom-left-radius:0px;
@@ -47,12 +47,12 @@
  }.table-form tr:hover td{
 
   }
-.table-form tr:nth-child(odd){ background-color:#d4ffaa; }
-.table-form tr:nth-child(even)    { background-color:#ebffd8; }.table-form td{
+.table-form tr:nth-child(odd){ background-color: #45b5de; }
+.table-form tr:nth-child(even)    { background-color: #3dc8de; }.table-form td{
                                                                  vertical-align:middle;
 
 
-                                                                 border:1px solid #3f7f00;
+                                                                 border:1px solid #2c97de;
                                                                  border-width:0px 1px 1px 0px;
                                                                  text-align:center;
                                                                  padding:7px;
@@ -68,11 +68,11 @@
                                                                     border-width:0px 0px 0px 0px;
                                                                   }
 .table-form tr:first-child td{
-  background:-o-linear-gradient(bottom, #33491c 5%, #3f7f00 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #33491c), color-stop(1, #3f7f00) );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#33491c", endColorstr="#3f7f00");
+  background:-o-linear-gradient(bottom, #185478 5%, #1d6492 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #185478), color-stop(1, #1d6492) );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#185478", endColorstr="#1D6492");
 
-  background-color:#33491c;
-  border:0px solid #3f7f00;
+  background-color:#185478;
+  border:0px solid #1d6492;
   text-align:center;
   border-width:0px 0px 1px 1px;
   font-size:15px;
@@ -81,10 +81,10 @@
   color:#ffffff;
 }
 .table-form tr:first-child:hover td{
-  background:-o-linear-gradient(bottom, #33491c 5%, #3f7f00 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #33491c), color-stop(1, #3f7f00) );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#33491c", endColorstr="#3f7f00");
+  background:-o-linear-gradient(bottom, #185478 5%, #1D6492 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #185478), color-stop(1, #1D6492) );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#185478", endColorstr="#1D6492");
 
-  background-color:#33491c;
+  background-color:#185478;
 }
 .table-form tr:first-child td:first-child{
   border-width:0px 0px 1px 0px;
@@ -100,9 +100,10 @@
   padding-top: 2.5%;
   padding-bottom: 2.5%;
   overflow: auto;
-  color: #33491c;
+  color: #b1d6e8;
   a {
-    background-color: #33491c;
+    color: #b1d6e8;
+    background-color: #185478;
     border: solid;
     border-radius: 20px;
     color: white;
@@ -111,7 +112,7 @@
 }
 .item-new:hover{
   a{
-    background-color: #264904;
-    color: #b1d6e8;
+    background-color: #0f133f;
+    color: #aacee0;
   }
 }

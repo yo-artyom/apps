@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails ruby-getting-started: development" uuid="1fe3d095-8974-4ff7-a6dc-d54e4887c1a9">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails ruby-getting-started: test" uuid="f039110d-9a98-4a80-bf0c-831991a55fe6">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails ruby-getting-started: production" uuid="cbb26d1c-7057-48c0-aa36-129081374a5e">
+      <first-sync>true</first-sync>
+      <user-name>loejzqhcfxlphb</user-name>
+      <user-password>df8adfffdfe4dfe4df9edf9edf98dfe7df92dff3dffbdfebdf9ddfcddfcedfc9dfdfdfd3dfefdf93df93df9cdfc4dfc1dfe6df9adfe3</user-password>
+    </data-source>
+  </component>
+</project>

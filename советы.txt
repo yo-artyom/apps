@@ -1,0 +1,2 @@
+миграция бд
+heroku run rake db:migrate
