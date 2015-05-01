@@ -78,6 +78,7 @@ Main Components
   display: inline-block;
   position: relative;
   padding: 2px;
+    width: 50%;
   border-radius: 50em;
   border: 1px solid #225b78;
 }
@@ -90,11 +91,11 @@ Main Components
   z-index: 1;
   display: inline-block;
   float: left;
-  width: 90px;
-  height: 40px;
+  width: 50%;
+  height: 50px;
   line-height: 40px;
   cursor: pointer;
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   color: #FFFFFF;
 }
 .cd-pricing-switcher .cd-switch {
@@ -103,7 +104,7 @@ Main Components
   top: 2px;
   left: 2px;
   height: 40px;
-  width: 90px;
+  width: 50%;
   background-color: #0c1f28;
   border-radius: 50em;
   -webkit-transition: -webkit-transform 0.5s;
@@ -145,7 +146,8 @@ Main Components
     float: left;
   }
   .cd-has-margins .cd-pricing-list > li {
-    width: 32.3333333333%;
+    width: 48%;
+    height: 48%;
     float: left;
     margin-right: 1.5%;
   }
@@ -155,8 +157,10 @@ Main Components
 }
 
 .cd-pricing-wrapper {
+
   /* this is the item that rotates */
   position: relative;
+
 }
 .touch .cd-pricing-wrapper {
   /* fix a bug on IOS8 - rotating elements dissapear*/

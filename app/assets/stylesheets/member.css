@@ -169,6 +169,7 @@ header p {
 }
 
 #cd-team {
+    width: 100%;
 }
 #cd-team .cd-container {
     max-width: 1200px;

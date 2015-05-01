@@ -10,4 +10,10 @@ class MainPagesController < ApplicationController
       @super = @apps.zip(@games,@num)
     end
   end
+
+  def go
+    @items = Item.all
+    @apps =  Item.where( app_type:  'App')
+    @games = Item.where( app_type:  'Game')
+  end
 end

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'main_pages/index'
   match '/main',    to: 'main_pages#index',      via: 'get'
-
+  match '/go',    to: 'main_pages#go',      via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
