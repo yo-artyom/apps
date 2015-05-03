@@ -88,8 +88,6 @@ body {
 }
 
 .nav {
-
-  width: 100%;
   list-style: none;
 }
 
@@ -99,15 +97,13 @@ body {
 }
 
 .nav li {
-  width: 48%;
-  margin-right: 1%;
-  margin-left: 1%;
+  width: 50%;
   height: 100px;
   float: left;
   text-align: center;
   background: #abc;
   line-height: 100px;
-  border-right: 10px solid #eee;
+
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -122,6 +118,7 @@ body {
   border-radius: 1px;
   margin-right: 1%;
   margin-left: 1%;
+  margin-bottom: 2%;
   border-color: #3946ea;
   float: left;
   text-align: center;
@@ -134,6 +131,7 @@ body {
 
 .games{
   width: 48%;
+  margin-bottom: 2%;
   border: 1px solid;
   border-radius: 1px;
   margin-right: 1%;
