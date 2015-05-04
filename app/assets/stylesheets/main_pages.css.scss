@@ -15,7 +15,7 @@ body {
 
 #demo {
   width: 100%;
-  height: 2000px;
+  height: auto;
   visibility: visible;
   margin: 100px auto 0;
 
@@ -23,41 +23,6 @@ body {
   cursor: -moz-grab;
   cursor: -webkit-grab;
   cursor: grab;
-}
-
-#demo li.first {
-
-}
-
-#demo li.middle {
-
-}
-
-#demo li.last {
-
-}
-
-#dragend {
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-
-  padding: 18px;
-  color: #fff;
-  border-radius: 3px;
-  width: 150px;
-  font-size: 15px;
-}
-
-#dragend h1 {
-  font-size: 15px;
-  font-weight: normal;
-  margin-bottom: 12px;
-}
-
-#dragend a {
-  text-decoration: underline;
-  color: #fff
 }
 
 .button {
@@ -89,37 +54,41 @@ body {
 
 .nav {
   list-style: none;
+  font-size: 1.375em;
+  padding-bottom: 5%;
+  text-align: center;
 }
 
 .nav li.active {
   background: #215;
   color: #fff;
+  height: 15%;
 }
 
 .nav li {
   width: 50%;
-  height: 100px;
   float: left;
+  line-height: 6em;
   text-align: center;
   background: #abc;
-  line-height: 100px;
-
   box-sizing: border-box;
   cursor: pointer;
+  height: 15%;
 }
 
 .nav li:last-child {
   border: 0;
 }
 
-.apps{
+.apps, .games{
   width: 48%;
-  border: 1px solid;
-  border-radius: 1px;
+  border-radius: 54px 54px 54px 54px;
+  -moz-border-radius: 54px 54px 54px 54px;
+  -webkit-border-radius: 54px 54px 54px 54px;
+  border: 1px solid #3946ea;
   margin-right: 1%;
   margin-left: 1%;
   margin-bottom: 2%;
-  border-color: #3946ea;
   float: left;
   text-align: center;
   hr{
@@ -130,13 +99,5 @@ body {
 }
 
 .games{
-  width: 48%;
-  margin-bottom: 2%;
-  border: 1px solid;
-  border-radius: 1px;
-  margin-right: 1%;
-  margin-left: 1%;
-  border-color: #57a809;
-  float: left;
-  text-align: center;
+  border: 1px solid #62ea8e;
 }
