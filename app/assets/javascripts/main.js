@@ -8,12 +8,12 @@ jQuery(document).ready(function($){
     });
 
     //close
-    /*$('.items').on('click', function(event){
+    $('.items').on('click', function(event){
         var si = $('#items').find('ul a').data(type);
 
         if( $(event.target).is('.info-panel-'+si) || $(event.target).is('.info-panel-close') ) {
             $('.info-panel-'+si).removeClass('is-visible');
             event.preventDefault();
         }
-    });*/
+    });
 });
