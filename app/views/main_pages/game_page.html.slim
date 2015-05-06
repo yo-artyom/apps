@@ -4,9 +4,6 @@ ul class='nav'
   =link_to(app_path)
     li  Приложения
 
-
-
-
 main
   section id="cd-team"
     .cd-container
@@ -17,7 +14,7 @@ main
 -@games.each do |item|
   div class="cd-member-bio member-#{item.id}"
     .cd-member-bio-pict
-      img src="../assets/adventure_time.jpg"
+      =image_tag(item.image_url, size: "80x80")
     .cd-bio-content
       h1 =item.name
       p =item.desc
