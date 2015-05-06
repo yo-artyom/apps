@@ -1,0 +1,22 @@
+ul class='nav'
+  =link_to(game_path)
+    li Игры
+  =link_to(app_path)
+    li class='active' Приложения
+
+main
+  section id="cd-team"
+    .cd-container
+      ul
+        li
+          =render 'main_pages/app_grid'
+
+-@apps.each do |item|
+  div class="cd-member-bio member-#{item.id}"
+    .cd-member-bio-pict
+      img src="../assets/adventure_time.jpg"
+    .cd-bio-content
+      h1 =item.name
+      p =item.desc
+
+a class="cd-member-bio-close" href="#0"

@@ -10,84 +10,55 @@
 body {
   background: #eee;
   padding: 15px;
+  height: 2000px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #demo {
   width: 100%;
-  height: auto;
+  height: 2000px;
   visibility: visible;
-  margin: 100px auto 0;
-
+  margin: 1% auto 0;
   cursor: hand;
   cursor: -moz-grab;
   cursor: -webkit-grab;
   cursor: grab;
 }
 
-.button {
-  height: 0;
-  width: 0;
-  position: absolute;
-  top: 250px;
-  left: 50%;
-  cursor: pointer;
-  border-style: solid;
-}
-
-.button.deactivated {
-  opacity: 0.2;
-  cursor: default;
-}
-
-.prev {
-  margin-left: -320px;
-  border-width: 50px 50px 50px 0;
-  border-color: transparent #333 transparent transparent;
-}
-
-.next {
-  margin-left: 270px;
-  border-width: 50px 0 50px 50px;
-  border-color: transparent transparent transparent #333;
-}
-
 .nav {
   list-style: none;
-  font-size: 1.375em;
-  padding-bottom: 5%;
   text-align: center;
+  height: 5%;
+  margin-bottom: 1%;
 }
 
 .nav li.active {
   background: #215;
   color: #fff;
-  height: 15%;
+
 }
 
 .nav li {
   width: 50%;
   float: left;
-  line-height: 6em;
   text-align: center;
   background: #abc;
   box-sizing: border-box;
   cursor: pointer;
-  height: 15%;
-}
-
-.nav li:last-child {
-  border: 0;
+  font-size: 2em;
+  line-height: 312.5%;
+  font-weight: 600;
+  height: 100%;
 }
 
 .apps, .games{
-  width: 48%;
-  border-radius: 54px 54px 54px 54px;
-  -moz-border-radius: 54px 54px 54px 54px;
-  -webkit-border-radius: 54px 54px 54px 54px;
+  width: 49%;
+  border-radius: 30px 30px 30px 30px;
+  -moz-border-radius: 30px 30px 30px 30px;
+  -webkit-border-radius: 30px 30px 30px 30px;
   border: 1px solid #3946ea;
-  margin-right: 1%;
-  margin-left: 1%;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
   margin-bottom: 2%;
   float: left;
   text-align: center;

@@ -16,4 +16,12 @@ class MainPagesController < ApplicationController
     @apps =  Item.where( app_type:  'App')
     @games = Item.where( app_type:  'Game')
   end
+
+  def app_page
+    @apps =  Item.where( app_type:  'App')
+  end
+
+  def game_page
+    @games = Item.where( app_type:  'Game')
+  end
 end

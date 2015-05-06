@@ -14,16 +14,5 @@
  *= require_self
  */
 
-.item{
-    border: solid;
-    border-bottom-color: #0c1f28;
-    border-bottom-width: 1px;
 
-}
-.game{
-    border: solid;
-    border-bottom-color: #0c2809;
-    border-bottom-width: 1px;
-    background-color: yellowgreen;
-}
 

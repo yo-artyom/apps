@@ -5,12 +5,14 @@ Rails.application.routes.draw do
   get 'main_pages/index'
   match '/main',    to: 'main_pages#index',      via: 'get'
   match '/go',    to: 'main_pages#go',      via: 'get'
+  match '/game',    to: 'main_pages#game_page',      via: 'get'
+  match '/app',    to: 'main_pages#app_page',      via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
 
-  root 'main_pages#go'
+  root 'main_pages#game_page'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
