@@ -5,68 +5,42 @@
   box-shadow: 10px 10px 5px #888888;
   border:1px solid #2c97de;
 
-  -moz-border-radius-bottomleft:0px;
-  -webkit-border-bottom-left-radius:0px;
-  border-bottom-left-radius:0px;
-
-  -moz-border-radius-bottomright:0px;
-  -webkit-border-bottom-right-radius:0px;
-  border-bottom-right-radius:0px;
-
-  -moz-border-radius-topright:0px;
-  -webkit-border-top-right-radius:0px;
-  border-top-right-radius:0px;
-
-  -moz-border-radius-topleft:0px;
-  -webkit-border-top-left-radius:0px;
-  border-top-left-radius:0px;
 }.table-form table{
    border-collapse: collapse;
    border-spacing: 0;
    width:100%;
    height:100%;
    margin:0px;padding:0px;
- }.table-form tr:last-child td:last-child {
-    -moz-border-radius-bottomright:0px;
-    -webkit-border-bottom-right-radius:0px;
-    border-bottom-right-radius:0px;
-  }
-.table-form table tr:first-child td:first-child {
-  -moz-border-radius-topleft:0px;
-  -webkit-border-top-left-radius:0px;
-  border-top-left-radius:0px;
+ }
+.table-form tr:nth-child(odd) {
+  background-color: #2C97DE;
 }
-.table-form table tr:first-child td:last-child {
-  -moz-border-radius-topright:0px;
-  -webkit-border-top-right-radius:0px;
-  border-top-right-radius:0px;
-}.table-form tr:last-child td:first-child{
-   -moz-border-radius-bottomleft:0px;
-   -webkit-border-bottom-left-radius:0px;
-   border-bottom-left-radius:0px;
- }.table-form tr:hover td{
+.table-form tr:nth-child(even)    { background-color: #2FA9F4; }
+.table-form td{
+  vertical-align:middle;
+  border:1px solid #6082f5;
+  border-width:0px 1px 1px 0px;
+  text-align:center;
+  padding:1%;
+  font-size: 1em;
+  font-family:Arial;
+  font-weight:normal;
+  color:#000000;
+}
+.table-form td a{
+  font-weight: bolder;
+  font-size: 1.2em;
 
-  }
-.table-form tr:nth-child(odd){ background-color: #45b5de; }
-.table-form tr:nth-child(even)    { background-color: #3dc8de; }.table-form td{
-                                                                 vertical-align:middle;
-
-
-                                                                 border:1px solid #2c97de;
-                                                                 border-width:0px 1px 1px 0px;
-                                                                 text-align:center;
-                                                                 padding:7px;
-                                                                 font-size:15px;
-                                                                 font-family:Arial;
-                                                                 font-weight:normal;
-                                                                 color:#000000;
-                                                               }.table-form tr:last-child td{
-                                                                  border-width:0px 1px 0px 0px;
-                                                                }.table-form tr td:last-child{
-                                                                   border-width:0px 0px 1px 0px;
-                                                                 }.table-form tr:last-child td:last-child{
-                                                                    border-width:0px 0px 0px 0px;
-                                                                  }
+}
+.table-form tr:last-child td{
+  border-width:0px 1px 0px 0px;
+}
+.table-form tr td:last-child{
+ border-width:0px 0px 1px 0px;
+}
+.table-form tr:last-child td:last-child{
+  border-width:0px 0px 0px 0px;
+}
 .table-form tr:first-child td{
   background:-o-linear-gradient(bottom, #185478 5%, #1d6492 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #185478), color-stop(1, #1d6492) );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#185478", endColorstr="#1D6492");
@@ -101,12 +75,14 @@
   padding-bottom: 2.5%;
   overflow: auto;
   color: #b1d6e8;
+  background-color: #0f133f;
   a {
     color: #b1d6e8;
     background-color: #185478;
     border: solid;
     border-radius: 20px;
     color: white;
+    padding: 0px 6%;
 
   }
 }

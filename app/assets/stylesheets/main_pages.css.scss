@@ -9,7 +9,7 @@
 
 body {
   background: #eee;
-  padding: 15px;
+
   height: 2000px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -71,4 +71,8 @@ body {
 
 .games{
   border: 1px solid #62ea8e;
+}
+
+.item-image{
+  width: 100%;
 }

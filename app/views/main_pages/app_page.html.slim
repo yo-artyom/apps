@@ -3,15 +3,20 @@ ul class='nav'
     li Игры
   =link_to(app_path)
     li class='active' Приложения
-
-main
-  section id="cd-team"
-    .cd-container
-      ul
-        li
-          =render 'main_pages/app_grid'
+#items
+  ul
+    li
+      =render 'main_pages/app_grid'
 
 -@apps.each do |item|
+  div class= 'info-panel-#{item.id} from-right'
+    .info-panel-container
+      .info-panel-content
+        =image_tag(item.image_url, size: "80x80")
+        h1 =item.name
+        p =item.desc
+
+/-@apps.each do |item|
   div class="cd-member-bio member-#{item.id}"
     .cd-member-bio-pict
       =image_tag(item.image_url, size: "80x80")
@@ -19,4 +24,4 @@ main
       h1 =item.name
       p =item.desc
 
-a class="cd-member-bio-close" href="#0"
+/a class="cd-member-bio-close" href="#0"

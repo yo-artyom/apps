@@ -1,11 +1,8 @@
 -@apps.each do |item|
-  .apps
-    a data-type='member-#{item.id}'
-      figure
-        =image_tag(item.image_url, size: "80x80")
-    br
-    hr
-    .cd-member-info
+  a data-type='#{item.id}' href='#'
+    .apps
+      =image_tag(item.image_url, size: "80x80")
+      hr
       =item.name
       br
       =button_to 'Купить', '#'

@@ -1,2 +1,6 @@
 миграция бд
 heroku run rake db:migrate
+
+
+
+как не загружать все css  и скрипты?

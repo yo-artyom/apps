@@ -1,38 +1,19 @@
 jQuery(document).ready(function($){
-    var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+    //open
 
-    //open team-member bio
-    $('#cd-team').find('ul a').on('click', function(event){
+    $('#items').find('ul a').on('click', function(event){
         event.preventDefault();
-        var selected_member = $(this).data('type');
-        $('.cd-member-bio.'+selected_member+'').addClass('slide-in');
-        $('.cd-member-bio-close').addClass('is-visible');
-
-        // firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
-        if( is_firefox ) {
-            $('main').addClass('slide-out').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-                $('body').addClass('overflow-hidden');
-            });
-        } else {
-            $('main').addClass('slide-out');
-            $('body').addClass('overflow-hidden');
-        }
-
+        var selected_item = $(this).data('type');
+        $('.info-panel-'+selected_item).addClass('is-visible');
     });
 
-    //close team-member bio
-    $(document).on('click', '.cd-overlay, .cd-member-bio-close', function(event){
-        event.preventDefault();
-        $('.cd-member-bio').removeClass('slide-in');
-        $('.cd-member-bio-close').removeClass('is-visible');
+    //close
+    /*$('.items').on('click', function(event){
+        var si = $('#items').find('ul a').data(type);
 
-        if( is_firefox ) {
-            $('main').removeClass('slide-out').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-                $('body').removeClass('overflow-hidden');
-            });
-        } else {
-            $('main').removeClass('slide-out');
-            $('body').removeClass('overflow-hidden');
+        if( $(event.target).is('.info-panel-'+si) || $(event.target).is('.info-panel-close') ) {
+            $('.info-panel-'+si).removeClass('is-visible');
+            event.preventDefault();
         }
-    });
+    });*/
 });

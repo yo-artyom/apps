@@ -27,5 +27,6 @@
     = f.select :app_type, Item::APP_TYPE,
                prompt: 'Тип приложения'
 
-  .actions class="actions"
+  .actions
     = f.submit
+    = button_to 'Назад', items_path, class:'back'

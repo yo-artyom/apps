@@ -21,7 +21,7 @@ p id="notice"
         td =item.app_type
         td = image_tag(item.image_url, size: "80x80")
         td =link_to 'Редактировать', edit_item_path(item)
-        td =link_to 'Удалить', item, :method =>  :delete, data: { confirm: 'Are you sure?' }
+        td =link_to 'Удалить', item, :method =>  :delete, data: { confirm: 'Точно удалить?' }
 
 
   br

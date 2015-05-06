@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -30,9 +30,9 @@ a {
   text-decoration: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 .cd-header {
@@ -587,9 +587,9 @@ Main Components
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xkeyframes 
+xkeyframes
 
 -------------------------------- */
 @-webkit-keyframes cd-rotate {
@@ -1020,6 +1020,7 @@ Form
     border: none;
     background: #2c97de;
     border-radius: .25em;
+    margin-right: 1%;
     padding: 16px 20px;
     color: #ffffff;
     font-weight: bold;
@@ -1033,6 +1034,7 @@ Form
     -o-appearance: none;
     appearance: none;
 }
+
 .no-touch .cd-form input[type="submit"]:hover {
     background: #42a2e1;
 }
