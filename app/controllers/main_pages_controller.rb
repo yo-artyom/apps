@@ -24,4 +24,8 @@ class MainPagesController < ApplicationController
   def game_page
     @games = Item.where( app_type:  'Game')
   end
+
+  def updates
+
+  end
 end

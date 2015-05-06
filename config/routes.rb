@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   match '/go',    to: 'main_pages#go',      via: 'get'
   match '/game',    to: 'main_pages#game_page',      via: 'get'
   match '/app',    to: 'main_pages#app_page',      via: 'get'
+  match '/updates',    to: 'main_pages#updates',      via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
