@@ -1,4 +1,6 @@
-jQuery(document).ready(function($){
+var ready;
+ready = function() {
+
     //open
 
     $('#items').find('ul a').on('click', function(event){
@@ -16,4 +18,6 @@ jQuery(document).ready(function($){
             event.preventDefault();
         }
     });
-});
+};
+ $(document).ready(ready)
+ $(document).on('page:load', ready)
