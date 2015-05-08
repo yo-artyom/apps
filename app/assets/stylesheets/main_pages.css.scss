@@ -1,6 +1,7 @@
 // Place all the styles related to the main_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$height: 2000px;
 * {
   padding: 0;
   margin: 0;
@@ -13,10 +14,13 @@ body {
   height: 2000px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+body.overflow-hidden {
+  overflow: hidden;
+}
 
 #demo {
   width: 100%;
-  height: 2000px;
+  height: $height;
   visibility: visible;
   margin: 1% auto 0;
   cursor: hand;
@@ -75,4 +79,23 @@ body {
 
 .item-image{
   width: 100%;
+}
+
+#items {
+  width: 100%;
+  height: $height;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(138, 190, 178, 0.8);
+  cursor: pointer;
+  display: none;
+}
+#items.slide-out.overlay{
+  display:block;
 }
