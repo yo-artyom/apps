@@ -34,6 +34,7 @@ body.overflow-hidden {
   text-align: center;
   height: 5%;
   margin-bottom: 1%;
+  overflow: visible;
 }
 
 .nav li.active {
@@ -96,6 +97,37 @@ body.overflow-hidden {
   cursor: pointer;
   display: none;
 }
-#items.slide-out.overlay{
+.overlay.on{
   display:block;
+  -webkit-animation: cd-fade-in 0.6s;
+  -moz-animation: cd-fade-in 0.6s;
+  animation: cd-fade-in 0.6s;
+}
+
+@-webkit-keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
