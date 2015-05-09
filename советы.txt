@@ -2,5 +2,11 @@
 heroku run rake db:migrate
 
 
+Large display 1200px and up
+Default 980px and up
+Portrait tablets 768px
+Phones to tablets 767px
+Phones 480px and below
+
 
 как не загружать все css  и скрипты?
