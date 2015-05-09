@@ -9,15 +9,17 @@ ready = function() {
         selected_item = $(this).data('type');
         $('body').addClass('overflow-hidden');
         $('.info-panel-'+selected_item).addClass('is-visible');
-        $('.overlay').addClass('on');
+        $('.overlay').fadeIn(300);
+        $('.close').addClass('is-visible ')
     });
 
     //close
     $(document).on('click', '.overlay, .close', function(event){
         event.preventDefault();
-        $('.overlay').removeClass('on');
-        $('.info-panel-'+selected_item).removeClass('is-visible');
 
+        $('.info-panel-'+selected_item).removeClass('is-visible');
+        $('.overlay').fadeOut(300);
+        $('.close').removeClass('is-visible')
         //}
     });
 };

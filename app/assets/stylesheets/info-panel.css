@@ -5,9 +5,9 @@
     height: 100%;
     width: 100%;
     visibility: hidden;
-    -webkit-transition: visibility 0s 0.6s;
-    -moz-transition: visibility 0s 0.6s;
-    transition: visibility 0s 0.6s;
+    -webkit-transition: visibility 0s 0.3s;
+    -moz-transition: visibility 0s 0.3s;
+    transition: visibility 0s 0.3s;
 }
 .info-panel::after {
     /* overlay layer */
@@ -18,97 +18,15 @@
     height: 100%;
     background: transparent;
     cursor: pointer;
-    -webkit-transition: background 0.3s 0.3s;
+   /* -webkit-transition: background 0.3s 0.3s;
     -moz-transition: background 0.3s 0.3s;
-    transition: background 0.3s 0.3s;
+    transition: background 0.3s 0.3s;*/
 }
 .info-panel.is-visible {
     visibility: visible;
-    -webkit-transition: visibility 0s 0s;
-    -moz-transition: visibility 0s 0s;
-    transition: visibility 0s 0s;
-}
-.info-panel.is-visible::after {
-    background: rgba(0, 0, 0, 0.6);
-    -webkit-transition: background 0.3s 0s;
-    -moz-transition: background 0.3s 0s;
-    transition: background 0.3s 0s;
-}
-.info-panel.is-visible .info-panel-close::before {
-    -webkit-animation: cd-close-1 0.6s 0.3s;
-    -moz-animation: cd-close-1 0.6s 0.3s;
-    animation: cd-close-1 0.6s 0.3s;
-}
-.info-panel.is-visible .info-panel-close::after {
-    -webkit-animation: cd-close-2 0.6s 0.3s;
-    -moz-animation: cd-close-2 0.6s 0.3s;
-    animation: cd-close-2 0.6s 0.3s;
 }
 
-@-webkit-keyframes cd-close-1 {
-    0%, 50% {
-        -webkit-transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(45deg);
-    }
-}
-@-moz-keyframes cd-close-1 {
-    0%, 50% {
-        -moz-transform: rotate(0);
-    }
-    100% {
-        -moz-transform: rotate(45deg);
-    }
-}
-@keyframes cd-close-1 {
-    0%, 50% {
-        -webkit-transform: rotate(0);
-        -moz-transform: rotate(0);
-        -ms-transform: rotate(0);
-        -o-transform: rotate(0);
-        transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-}
-@-webkit-keyframes cd-close-2 {
-    0%, 50% {
-        -webkit-transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(-45deg);
-    }
-}
-@-moz-keyframes cd-close-2 {
-    0%, 50% {
-        -moz-transform: rotate(0);
-    }
-    100% {
-        -moz-transform: rotate(-45deg);
-    }
-}
-@keyframes cd-close-2 {
-    0%, 50% {
-        -webkit-transform: rotate(0);
-        -moz-transform: rotate(0);
-        -ms-transform: rotate(0);
-        -o-transform: rotate(0);
-        transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-    }
-}
+
 .info-panel-header {
     position: fixed;
     width: 90%;
@@ -121,6 +39,7 @@
     -moz-transition: top 0.3s 0s;
     transition: top 0.3s 0s;
 }
+
 .info-panel-header h1 {
     font-weight: bold;
     color: #89ba2c;
@@ -152,71 +71,6 @@
     }
 }
 
-.info-panel-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 60px;
-    /* image replacement */
-    display: inline-block;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
-}
-.info-panel-close::before, .info-panel-close::after {
-    /* close icon created in CSS */
-    position: absolute;
-    top: 22px;
-    left: 20px;
-    height: 3px;
-    width: 20px;
-    background-color: #424f5c;
-    /* this fixes a bug where pseudo elements are slighty off position */
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.info-panel-close::before {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-.info-panel-close::after {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-.no-touch .info-panel-close:hover {
-    background-color: #424f5c;
-}
-.no-touch .info-panel-close:hover::before, .no-touch .info-panel-close:hover::after {
-    background-color: #ffffff;
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-}
-.no-touch .info-panel-close:hover::before {
-    -webkit-transform: rotate(220deg);
-    -moz-transform: rotate(220deg);
-    -ms-transform: rotate(220deg);
-    -o-transform: rotate(220deg);
-    transform: rotate(220deg);
-}
-.no-touch .info-panel-close:hover::after {
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    transform: rotate(135deg);
-}
-
 .info-panel-container {
     position: fixed;
     width: 90%;
@@ -230,9 +84,9 @@
     -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-delay: 0.3s;
-    -moz-transition-delay: 0.3s;
-    transition-delay: 0.3s;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    transition-delay: 0s;
 }
 .from-right .info-panel-container {
     right: 0;
