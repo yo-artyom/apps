@@ -1,19 +1,21 @@
-
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
   .col{
     width: 98%;
   }
+
   .nav li{
     font-size: 3em;
   }
+
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-.col{
-  width: 98%;
-}
+  .col{
+   width: 48%;
+  }
 }
 
 
