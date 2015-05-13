@@ -1,5 +1,5 @@
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-device-width : 768px) {
 
   .col{
     width: 98%;
@@ -12,7 +12,7 @@
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-device-width : 1200px) {
   .col{
    width: 48%;
   }
