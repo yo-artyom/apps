@@ -9,23 +9,28 @@
              = message
 
 
-  div class="icon"
+  .icon
     label  Название
     br
     = f.text_field :name, class: 'write'
-  div class="icon"
+  .icon
     label Описание
     br
     = f.text_area :desc, class: 'write'
-  div class="icon"
+  .icon
     label Картинка
     br
     = f.text_field :image_url, class: 'write'
 
-  div class="icon"
+  .icon
     br
     = f.select :app_type, Item::APP_TYPE,
                prompt: 'Тип приложения'
+
+  .icon
+    label Рейтинг
+    =f.text_field :rating, class: 'write'
+  
 
   .actions
     = f.submit

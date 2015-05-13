@@ -4,7 +4,7 @@ ready = function() {
 
     //open
 
-    $('#items').find('ul a').on('click', function(event){
+    $('#items').find('a').on('click', function(event){
         event.preventDefault();
         selected_item = $(this).data('type');
         $('body').addClass('overflow-hidden');

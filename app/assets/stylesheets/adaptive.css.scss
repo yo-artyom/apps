@@ -1,7 +1,36 @@
-@media only screen and (min-width: 980px) {
-  .apps, .games{
-    width: 98%;
-    margin: 0px 1%;
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+  .col{
+    width: 100%;}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .col{
+    width: 100%;}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .col{
+    width: 100%;}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .col{
+    width: 100%;
+    background-color: #225b78;
   }
 }
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .col{
+    width: 100%;
+
+    }
+}
+
+
 

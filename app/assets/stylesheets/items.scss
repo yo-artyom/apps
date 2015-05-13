@@ -1,3 +1,7 @@
+.items-container{
+  background-color: #0f133f;
+  height: 2000px;
+}
 
 .table-form {
   margin:0px;padding:0px;
@@ -30,6 +34,9 @@
 .table-form td a{
   font-weight: bolder;
   font-size: 1.2em;
+  &:hover{
+  color: #b5d8ff;
+}
 
 }
 .table-form tr:last-child td{
@@ -83,8 +90,8 @@
     border-radius: 20px;
     color: white;
     padding: 0px 6%;
-
   }
+
 }
 .item-new:hover{
   a{
