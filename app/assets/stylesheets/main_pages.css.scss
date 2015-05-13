@@ -11,23 +11,11 @@ $height: 2000px;
 
 body {
   background: #eee;
-
   height: 2000px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body.overflow-hidden {
   overflow: hidden;
-}
-
-#demo {
-  width: 100%;
-  height: auto;
-  visibility: visible;
-  margin: 1% auto 0;
-  cursor: hand;
-  cursor: -moz-grab;
-  cursor: -webkit-grab;
-  cursor: grab;
 }
 
 .nav {
@@ -90,7 +78,6 @@ body.overflow-hidden {
 }
 
 .col{
-  width: 48%;
   float: right;
   margin: 1%;
 }
