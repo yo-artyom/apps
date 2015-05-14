@@ -20,6 +20,7 @@ body.overflow-hidden {
 .up-row{
   background: #f7f7f7;
   text-align: center;
+  border-bottom: 1px solid #adadad;
 
 }
 .nav {
@@ -30,7 +31,7 @@ body.overflow-hidden {
   padding-left: 10%;
   background: #f7f7f7;
   padding: 1% 0%;
-  margin-bottom: 1%;
+  border-bottom: 1px solid #adadad;
 }
 
 .nav-border{
@@ -81,7 +82,7 @@ body.overflow-hidden {
   height: 20%;
   float: left;
   text-align: center;
-  border: 1px solid #3946ea;
+
   hr{
     border: 1px solid #747474;
     margin-left: 5%;
@@ -91,10 +92,12 @@ body.overflow-hidden {
 }
 
 .apps{
-  border: 1px solid #3946ea;
+  border-bottom: 1px solid #3946ea;
+  border-right: 1px solid #3946ea;
 }
 
 .games{
-  border: 1px solid #62ea8e;
+  border-bottom: 1px solid #62ea8e;
+  border-right: 1px solid #62ea8e;
 }
 
