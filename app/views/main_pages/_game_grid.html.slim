@@ -1,8 +1,8 @@
 -@games.each do |item|
-  a data-type='#{item.id}' href='#'
-    .games
-      =image_tag(item.image_url, size: "80x80")
+  .games
+    a data-type='#{item.id}' href='#'
+      =image_tag(item.image_url, size: "80x80", class: "icon")
       hr
       =item.name
       br
-      =button_to 'Купить', '#'
+      =button_to 'Купить'

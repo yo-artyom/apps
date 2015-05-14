@@ -16,7 +16,7 @@ ready = function() {
     //close
     $(document).on('click', '.overlay, .close', function(event){
         event.preventDefault();
-
+        $('body').removeClass('overflow-hidden');
         $('.info-panel-'+selected_item).removeClass('is-visible');
         $('.overlay').fadeOut(300);
         $('.close').removeClass('is-visible')

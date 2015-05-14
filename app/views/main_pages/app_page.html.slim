@@ -1,8 +1,13 @@
+.up-row
+  h1 1APPS
 ul class='nav'
-  =link_to(game_path)
-    li Игры
-  =link_to(app_path)
-    li class='active' Приложения
+  .nav-border
+    =link_to(game_path)
+      li
+        p Игры
+    =link_to(app_path)
+      li class='active'
+        p Приложения
 
 #items
   .overlay

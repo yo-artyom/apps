@@ -1,8 +1,8 @@
 -@apps.each do |item|
   a data-type='#{item.id}' href='#'
     .apps
-      =image_tag(item.image_url, size: "80x80")
+      =image_tag(item.image_url, size: "80x80", class: "icon")
       hr
       =item.name
       br
-      =button_to 'Купить', '#'
+      =button_to '#'
