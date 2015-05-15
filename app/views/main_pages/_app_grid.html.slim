@@ -7,7 +7,7 @@
       br
       -for i in 1..item.rating
         =image_tag('star.png',size: '15x15')
-      -for j in 0..(4-item.rating)
+      -for i in 0..(4-item.rating)
           =image_tag('stars_empty.png', size: '15x15')
 
       br

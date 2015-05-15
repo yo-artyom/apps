@@ -1,5 +1,7 @@
 миграция бд
 heroku run rake db:migrate
+добавить изображения
+RAILS_ENV=production bundle exec rake assets:precompile
 
 
 Large display 1200px and up
