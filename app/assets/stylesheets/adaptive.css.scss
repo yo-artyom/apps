@@ -1,5 +1,5 @@
 /* Small Devices, Tablets */
-@media only screen and (max-device-width : 640px) {
+@media only screen and (max-width : 640px) {
 
   .col{
     width: 100% !important;
@@ -9,11 +9,11 @@
   }
 
   .item-image{
+    height: 100%;
     width: 25%;
     display: inline-block;
     padding: 0% 5.5% 0% 2.5%;
-    float: left;
-    position: relative;
+
   }
 
 }
