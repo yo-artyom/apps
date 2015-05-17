@@ -3,8 +3,7 @@ var selected_item;
 ready = function() {
 
     //open
-
-    $('#items').find('a').on('click', function(event){
+    $('#items').find('.item-info').on('click', function(event){
         event.preventDefault();
         selected_item = $(this).data('type');
         $('body').addClass('overflow-hidden');
@@ -19,9 +18,9 @@ ready = function() {
         $('body').removeClass('overflow-hidden');
         $('.info-panel-'+selected_item).removeClass('is-visible');
         $('.overlay').fadeOut(300);
-        $('.close').removeClass('is-visible')
-        //}
+        $('.close').removeClass('is-visible');
     });
 };
- $(document).ready(ready)
- $(document).on('page:load', ready)
+
+$(document).ready(ready)
+$(document).on('page:load', ready)

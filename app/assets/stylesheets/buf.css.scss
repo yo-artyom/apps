@@ -1,0 +1,59 @@
+.apps, .games{
+  display: inline-block;
+  width: 100%;
+  height: 170px;
+  float: right;
+  border-collapse: collapse;
+  a{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    float: left;
+  }
+}
+/*.item-info{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}*/
+.item-image{
+  width: 25%;
+  display: inline-block;
+  padding: 5% 5.5% 5% 2.5%;
+  float: left;
+  position: relative;
+}
+.item-name{
+  position: absolute;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  float: left;
+  width: 38%; //ширина текста
+  display: inline-block;
+}
+.rating{
+  display: inline-block;
+  float:left;
+  padding-top: 10%;
+}
+.buy-button {
+  position: relative;
+  border: 1px solid #2f7dbd;
+  width: 25%;
+  height: 20%;
+  margin-right: 5%;
+  margin-top: 10%;
+
+  float: right;
+  text-align: center;
+  padding-top: 0.5%;
+  font-size: 1.2em;
+  border-radius: 16px 16px 16px 16px;
+  -moz-border-radius: 16px 16px 16px 16px;
+  -webkit-border-radius: 16px 16px 16px 16px;
+  a{
+    color: #2F7DBD;
+    font-weight: 600;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+  }
+}

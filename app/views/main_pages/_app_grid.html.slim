@@ -1,14 +1,15 @@
 -@apps.each do |item|
-  a data-type='#{item.id}' href='#'
-    .apps
-      =image_tag(item.image_url, size: "80x80", class: "icon")
-      hr
-      =item.name
-      br
-      -for i in 1..item.rating
-        =image_tag('star.png',size: '15x15')
-      -for i in 0..(4-item.rating)
-          =image_tag('stars_empty.png', size: '15x15')
+  .apps
+    .item-info data-type= "#{item.id}"
+      =image_tag(item.image_url, class: 'item-image')
 
-      br
-      =button_to '#'
+      .item-name
+        h2
+          =item.name
+        .rating
+          -for j in 1..item.rating
+            =image_tag('star.png', size: '15x15')
+          -for j in 0..(4-item.rating)
+            =image_tag('stars_empty.png', size: '15x15')
+    .buy-button
+      =link_to 'Купить', '#'

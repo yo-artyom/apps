@@ -75,21 +75,10 @@ body.overflow-hidden {
   overflow: hidden;
   width: 50%;
   float: right;
+  position: relative;
 }
 
-.apps, .games{
-  width: 100%;
-  height: 20%;
-  float: left;
-  text-align: center;
 
-  hr{
-    border: 1px solid #747474;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  border-collapse: collapse;
-}
 
 .apps{
   border-bottom: 1px solid #3946ea;
