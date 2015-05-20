@@ -79,6 +79,7 @@ production:
 #
 production:
   <<: *default
-  database: ruby-getting-started_production
-  username: ruby-getting-started
-  password: <%= ENV['RUBY-GETTING-STARTED_DATABASE_PASSWORD'] %>
+  database: postgresql2.locum.ru
+  username: dload_ololo39
+  password: KSLRLo22FZ
+  #password: <%= ENV['RUBY-GETTING-STARTED_DATABASE_PASSWORD'] %>

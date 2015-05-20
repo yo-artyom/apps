@@ -6,7 +6,11 @@
 # server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
+connect_to = "#{$user}@#{$server}"
 
+role :app, [connect_to]
+role :web, [connect_to]
+role :db,  [connect_to]
 
 
 # role-based syntax

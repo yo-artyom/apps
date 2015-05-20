@@ -33,8 +33,12 @@ gem 'spring',        group: :development
 gem 'puma'
 
 # Use Capistrano for deployment
- gem 'capistrano-rails', group: :development
- gem 'unicorn'
+gem 'capistrano'
+gem 'capistrano-rails'
+gem 'capistrano-bundler'
+gem 'capistrano-rvm'
+gem 'unicorn'
+
+
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
