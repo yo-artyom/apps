@@ -133,6 +133,7 @@
     height: 100%;
     padding: 70px 5%;
     overflow: auto;
+    text-align: center;
     /* smooth scrolling on touch devices */
     -webkit-overflow-scrolling: touch;
 }
