@@ -32,12 +32,16 @@ gem 'spring',        group: :development
 
 gem 'puma'
 
+gem 'paperclip'
 # Use Capistrano for deployment
-gem 'capistrano'
-gem 'capistrano-rails'
-gem 'capistrano-bundler'
-gem 'capistrano-rvm'
-gem 'unicorn'
+group :development do
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
+end
+
+gem 'unicorn', group: :production
 
 
 # Use debugger

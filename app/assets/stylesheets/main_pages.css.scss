@@ -118,6 +118,10 @@ body.overflow-hidden {
   float: left;
   width: 38%;
   display: inline-block;
+  h2{
+    font-size: 1.6em;
+    font-weight: 700;
+  }
 }
 .rating{
   display: inline-block;
@@ -135,13 +139,14 @@ body.overflow-hidden {
   float: right;
   text-align: center;
   padding-top: 0.5%;
-  font-size: 1.2em;
+
   border-radius: 16px 16px 16px 16px;
   -moz-border-radius: 16px 16px 16px 16px;
   -webkit-border-radius: 16px 16px 16px 16px;
   a{
+    font-size: 1.7em;
     color: #2F7DBD;
-    font-weight: 600;
+    font-weight: 700;
     font-family: "Helvetica Neue", "Arial", sans-serif;
   }
 }
