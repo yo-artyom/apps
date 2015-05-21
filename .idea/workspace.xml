@@ -9,11 +9,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/first.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/point.svg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/second.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/adaptive.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/adaptive.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/main_pages.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/main_pages.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ruby-getting-started.iml" afterPath="$PROJECT_DIR$/.idea/ruby-getting-started.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ruby-getting-started.iws" />
@@ -79,8 +75,8 @@
       <file leaf-file-name="adaptive.css.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/adaptive.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16621253" vertical-offset="209" max-vertical-offset="846">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.2752043" vertical-offset="0" max-vertical-offset="846">
+              <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -1002,8 +998,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/adaptive.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16621253" vertical-offset="209" max-vertical-offset="846">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.2752043" vertical-offset="0" max-vertical-offset="846">
+          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
           <folding />
         </state>
       </provider>
