@@ -1,6 +1,8 @@
 /* Small Devices, Tablets */
 @media only screen and (max-device-width : 640px) {
-
+  h1{
+    font-size: 3em;
+  }
   .col{
     width: 100% !important;
   }
@@ -17,12 +19,13 @@
   }
   .item-name{
     h2{
-      font-size: 3em !important;
+      font-size: 2.8em !important;
     }
   }
   .buy-button{
     a{
       font-size: 3em !important;
+      padding-bottom: 1%;
     }
   }
   .close{
