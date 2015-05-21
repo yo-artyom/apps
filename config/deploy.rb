@@ -1,18 +1,18 @@
 # config valid only for Capistrano 3.1
 lock '3.4.0'
 
-application = 'blyad'
+application = '1apps'
 login = 'dload'
 $user = 'hosting_' + login
 $server = 'hydrogen.locum.ru'
-rvm_ruby_string = '2.2.0'
+rvm_ruby_string = '2.2.1'
 deploy_to = "/home/#{ $user }/projects/#{ application }"
 unicorn_conf = "/etc/unicorn/#{ application }.#{ login }.rb"
 unicorn_pid = "/var/run/unicorn/#{ $user }/#{ application }.#{ login }.pid"
 unicorn_start_cmd = "(cd #{ deploy_to }/current; rvm use #{ rvm_ruby_string } do bundle exec unicorn_rails -Dc #{ unicorn_conf })"
 
 set :application, application
-set :repo_url, "ssh://#{ $user }@#{ $server }/home/#{ $user }/git/hi.git"
+set :repo_url, "ssh://#{ $user }@#{ $server }/home/#{ $user }/git/1apps.git"
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
