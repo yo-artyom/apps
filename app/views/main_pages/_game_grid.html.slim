@@ -1,14 +1,16 @@
--@games.each do |item|
-  .games
-    .item-info data-type= "#{item.id}"
-      =image_tag(item.image_url, class: "item-image")
-      .item-name
-        h2
-          =item.name
-        .rating
-          -for j in 1..item.rating
-            =image_tag('star.png', size: '15x15')
-          -for j in 0..(4-item.rating)
-            =image_tag('stars_empty.png', size: '15x15')
-    .buy-button
-      =link_to 'Купить', '#'
+-@games.each_slice( @games.count/2 ) do |slice|
+  .col
+    -slice.each do |item|
+      .games
+        .item-info data-type= "#{item.id}"
+          =image_tag(item.image_url, class: "item-image")
+          .item-name
+            h2
+              =item.name
+            .rating
+              -for j in 1..item.rating
+                =image_tag('star.png', size: '25x25')
+              -for j in 0..(4-item.rating)
+                =image_tag('stars_empty.png', size: '25x25')
+        .buy-button
+          =link_to 'Купить', '#'
