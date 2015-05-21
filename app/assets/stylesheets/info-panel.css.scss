@@ -135,29 +135,15 @@
     overflow: auto;
     text-align: center;
     /* smooth scrolling on touch devices */
-    //-webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
     p {
     font-size:1.5em;
     }
 }
 
-.info-panel-content p {
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-family: "Droid Serif", serif;
-    color: #424f5c;
-    line-height: 1.4;
-    margin: 2em 0;
-}
+
 .info-panel-content p:first-of-type {
     margin-top: 0;
-}
-@media only screen and (min-width: 768px) {
-    .info-panel-content p {
-        font-size: 16px;
-        font-size: 1rem;
-        line-height: 1.6;
-    }
 }
 
 
