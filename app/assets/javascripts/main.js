@@ -13,7 +13,7 @@ ready = function() {
     });
 
     //close
-    $(document).on('click', '.overlay, .close', function(event){
+    $(document).on('click', '.close, .overlay ', function(event){
         event.preventDefault();
         $('body').removeClass('overflow-hidden');
         $('.info-panel-'+selected_item).removeClass('is-visible');
