@@ -1,11 +1,11 @@
 class MainPagesController < ApplicationController
 
   def app_page
-    @apps =  Item.where( app_type:  'App')
+    @apps =  Item.only_app
   end
 
   def game_page
-    @games = Item.where( app_type:  'Game')
+    @games = Item.only_game
   end
 
   def updates
