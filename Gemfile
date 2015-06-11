@@ -39,6 +39,7 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
   gem 'capistrano-rvm'
+
 end
 
 gem 'unicorn', group: :production
