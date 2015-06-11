@@ -30,7 +30,7 @@ test:
 production:
   <<: *default
   host: postgresql6.locum.ru
-  database: dload_1apps76
-  username: dload_1apps76
-  password: BHYXrb6Wh9u
+  database: dload_1apps90
+  username: dload_1apps90
+  password: Kg5KOqbVh
 
