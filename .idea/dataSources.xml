@@ -33,7 +33,7 @@
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://postgresql6.locum.ru/dload_ssss56</jdbc-url>
+      <jdbc-url>jdbc:postgresql://postgresql6.locum.ru/dload_1apps76</jdbc-url>
       <libraries>
         <library>
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-driver-license.txt</url>

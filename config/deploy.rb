@@ -42,7 +42,8 @@ set :pty, true
 set :default_env, {
                     # Выполните на удаленном сервере
                     # $ echo $PATH  и результат поместите сюда:
-                    path: '/usr/local/rvm/gems/ruby-2.1.5/bin:/usr/local/rvm/gems/ruby-2.1.5@global/bin:/usr/local/rvm/rubies/ruby-2.1.5/bin:/usr/local/rvm/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/X11R6/bin:/home/hosting_kenny/.gem/ruby/1.8/bin:/var/lib/gems/1.8/bin:/home/hosting_kenny/local/lib/python2.7/site-packages:/home/hosting_kenny/local/lib:/home/hosting_kenny/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games'
+                    path: '/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/rvm/bin'
+
                 }
 
 # Default value for keep_releases is 5
