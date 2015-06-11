@@ -1,4 +1,4 @@
--if !@apps.count.nil?
+-if ( @apps.count >= 2)
   -@apps.each_slice( @apps.count/2 ) do |slice|
     .col
       -slice.each do |item|

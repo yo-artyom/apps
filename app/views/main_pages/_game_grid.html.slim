@@ -1,4 +1,4 @@
--if !@games.count.nil?
+-if (@games.count >= 2)
   -@games.each_slice( @games.count/2 ) do |slice|
     .col
       -slice.each do |item|
