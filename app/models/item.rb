@@ -2,9 +2,7 @@ class Item < ActiveRecord::Base
 
   APP_TYPE = %w( Game App )
 
-  has_attached_file :image, :styles => {:small => "80x80", :medium => "300x300>",  :thumb => "100x100>" },
-                    :url => "/system/:class/:attachment/:id_partition/:style/:filename",
-                    :path => ":rails_root/public/system/:class/:attachment/:id_partition/:style/:filename"
+  has_attached_file :image, :styles => {:small => "80x80", :medium => "300x300>",  :thumb => "100x100>" }
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 
   validates :name, :desc, presence: true

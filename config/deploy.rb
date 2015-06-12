@@ -104,26 +104,7 @@ namespace :deploy do
   task :restart, :roles => :app do
     run "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_start_cmd}"
   end
-
-  desc "build missing paperclip styles"
-  task :build_missing_paperclip_styles do
-    on roles(:app) do
-      within release_path do
-        with rails_env: fetch(:rails_env) do
-          execute :rake, "paperclip:refresh:missing_styles"
-        end
-      end
-    end
-  end
-
-  task :create_symlinks do
-    on roles(:app) do
-      execute "ln -nfs #{shared_path}/system #{release_path}/#{attachment}" #Create symlink for private files
-    end
-
-
-  end
 end
 
-after :published, "deploy:create_symlinks"
-after("deploy:compile_assets", "deploy:build_missing_paperclip_styles")
+
+
