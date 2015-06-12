@@ -88,14 +88,6 @@ end
 
 set :unicorn_start_cmd, "(cd #{deploy_to}/current; rvm use #{rvm_ruby_string} do bundle exec unicorn_rails -Dc #{unicorn_conf})"
 
-
-desc 'Persist Paperclip uploads'
-task :create_symlinks do
-  on roles(:app) do
-    execute "ln -nfs #{shared_path}/system #{release_path}/system" #Create symlink for private files
-  end
-end
-after :published, "deploy:create_symlinks"
 # - for unicorn - #
 namespace :deploy do
   desc "Start application"
@@ -123,5 +115,15 @@ namespace :deploy do
       end
     end
   end
+
+  task :create_symlinks do
+    on roles(:app) do
+      execute "ln -nfs #{shared_path}/system #{release_path}/system" #Create symlink for private files
+    end
+
+
+  end
 end
+
+after :published, "deploy:create_symlinks"
 after("deploy:compile_assets", "deploy:build_missing_paperclip_styles")
