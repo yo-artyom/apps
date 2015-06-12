@@ -20,6 +20,6 @@ ul class='nav'
     div class= 'info-panel-#{item.id} from-right'
       .info-panel-container
         .info-panel-content
-          =image_tag(item.image_url, size: "80x80")
+          =image_tag(item.image.url, size: "80x80")
           h1 =item.name
           p =item.desc

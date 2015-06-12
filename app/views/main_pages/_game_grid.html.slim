@@ -4,7 +4,7 @@
       -slice.each do |item|
         .games
           .item-info data-type= "#{item.id}"
-            =image_tag(item.image_url, class: "item-image")
+            =image_tag(item.image.url, class: "item-image")
             .item-name
               h2
                 =item.name
