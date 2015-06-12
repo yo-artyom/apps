@@ -22,7 +22,7 @@
           td =truncate(item.desc, :length => 20)
           td =item.app_type
           td =item.rating
-          td = image_tag(item.image.url, size: "80x80")
+          td = item.image.url(:small)
           td =link_to 'Редактировать', edit_item_path(item)
           td =link_to 'Удалить', item, :method =>  :delete, data: { confirm: 'Точно удалить?' }
 
