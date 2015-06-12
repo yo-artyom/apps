@@ -106,15 +106,6 @@ namespace :deploy do
     run "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_start_cmd}"
   end
 
-  desc "build missing paperclip styles"
-  task :build_missing_paperclip_styles do
-    on roles(:app) do
-      within release_path do
-        with rails_env: fetch(:rails_env) do
-          execute :rake, "paperclip:refresh:missing_styles"
-        end
-      end
-    end
-  end
+
 
 end
