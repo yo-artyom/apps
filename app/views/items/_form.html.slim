@@ -20,7 +20,9 @@
   .icon
     label Картинка
     br
-    = f.file_field :image
+    = image_tag(@item.item_image.url, size: '80x80') if @item.item_image.url
+    = f.file_field :item_image
+    = f.hidden_field :item_image_cache
 
   .icon
     br
