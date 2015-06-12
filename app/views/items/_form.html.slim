@@ -21,6 +21,7 @@
     label Картинка
     br
     = image_tag(@item.item_image.url, size: '80x80') if @item.item_image.url
+
     = f.file_field :item_image
     = f.hidden_field :item_image_cache
 
@@ -35,5 +36,5 @@
   
 
   .actions
-    = f.submit
+    = f.submit  'Готово'
     = button_to 'Назад', items_path, class:'back'
