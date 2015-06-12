@@ -75,11 +75,11 @@ set :scm,             :git
 # Подробнее о создании репозитория читайте в нашем блоге
 # http://locum.ru/blog/hosting/git-on-locum
 #set :repository,      "ssh://#{user}@#{deploy_server}/home/#{user}/git/#{application}.git"
-
-## Если ваш репозиторий в GitHub, используйте такую конфигурацию
  set :repository,    "git@github.com:q3pp/apps.git"
 
-## --- Ниже этого места ничего менять скорее всего не нужно ---
+
+before "deploy:finalize_update", "deploy:create_symlinks"
+after("deploy:compile_assets", "deploy:build_missing_paperclip_styles")
 
 before 'deploy:finalize_update', 'set_current_release'
 task :set_current_release, :roles => :app do
@@ -117,6 +117,11 @@ namespace :deploy do
     end
   end
 
+  task :create_symlinks, :role => :app do
+    run "ln -nfs #{shared_path}/uploads #{release_path}/public/uploads" #Create symlink for public files
+    run "ln -nfs #{shared_path}/system #{release_path}/system" #Create symlink for private files
+    run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml" #Create symlink for database
+    run "ln -nfs #{shared_path}/.rvmrc #{release_path}/.rvmrc"  #Create symlink for rvm
+  end
 
 end
-after("deploy:compile_assets", "deploy:build_missing_paperclip_styles")
