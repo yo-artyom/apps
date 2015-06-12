@@ -118,7 +118,7 @@ namespace :deploy do
 
   task :create_symlinks do
     on roles(:app) do
-      execute "ln -nfs #{shared_path}/system #{release_path}/system" #Create symlink for private files
+      execute "ln -nfs #{shared_path}/system #{release_path}/#{attachment}" #Create symlink for private files
     end
 
 
