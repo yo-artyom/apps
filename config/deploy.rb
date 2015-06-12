@@ -104,6 +104,12 @@ namespace :deploy do
   task :restart, :roles => :app do
     run "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_start_cmd}"
   end
+
+  task :create_symlinks, :role => :app do
+    run "ln -nfs #{shared_path}/public/images #{release_path}"
+  end
+
+
 end
 
 
