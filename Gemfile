@@ -30,7 +30,7 @@ gem 'spring',        group: :development
 
 gem 'puma'
 
-
+gem 'paperclip'
 gem 'carrierwave'
 gem 'mini_magick'
 group :development do
