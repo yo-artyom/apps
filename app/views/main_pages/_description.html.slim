@@ -1,0 +1,7 @@
+-f.each do |item|
+  div class= 'info-panel-#{item.id} from-right'
+    .info-panel-container
+      .info-panel-content
+        =image_tag(item.item_image.url, size: "80x80")
+        h1 =item.name
+        p =item.desc

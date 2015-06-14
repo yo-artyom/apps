@@ -1,5 +1,5 @@
--if ( @apps.count >= 2)
-  -@apps.each_slice( @apps.count/2 ) do |slice|
+-if ( items.count >= 2)
+  -items.each_slice( items.count/2 ) do |slice|
     .col
       -slice.each do |item|
         .apps
