@@ -10,31 +10,35 @@
 
 
   .icon
-    label  Название
+    label
+      h2  Название
     br
     = f.text_field :name, class: 'write'
   .icon
-    label Описание
+    label
+      h2 Описание
     br
     = f.text_area :desc, class: 'write'
   .icon
-    label Картинка
+    label
+      h2  Картинка
     br
     = image_tag(@item.item_image.url, size: '80x80') if @item.item_image.url
-
-    = f.file_field :item_image
-    = f.hidden_field :item_image_cache
+    .image-field
+      = f.file_field :item_image
+      = f.hidden_field :item_image_cache
 
   .icon
-    br
+    h2 Тип приложения
     = f.select :app_type, Item::APP_TYPE,
                prompt: 'Тип приложения'
 
   .icon
-    label Рейтинг
+    label
+      h2 Рейтинг
     =f.text_field :rating, class: 'write'
   
 
   .actions
     = f.submit  'Готово'
-    = button_to 'Назад', item_path, class:'back'
+    = button_to 'Назад', items_path, class:'back', :method => :get

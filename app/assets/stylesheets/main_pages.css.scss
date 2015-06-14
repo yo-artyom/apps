@@ -13,11 +13,10 @@ $height: 2400px;//при высоте 1200
 body {
   background: #eee;
   height: 2000px;
+  overflow: hidden;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-body.overflow-hidden {
-  overflow: hidden;
-}
+
 .up-row{
   background: #f7f7f7;
   text-align: center;
@@ -63,7 +62,7 @@ body.overflow-hidden {
 }
 .nav li.active {
   background: #007aff;
-  color: #ddffff;
+  color: #e4fffc;
 }
 
 #items {
@@ -75,15 +74,15 @@ body.overflow-hidden {
 .col{
   overflow: hidden;
   width: 50%;
-  float: right;
+  float: left;
   position: relative;
 }
 
 
 
 .apps{
-  border-bottom: 1px solid #3946ea;
-  border-right: 1px solid #3946ea;
+  border-bottom: 1px solid #727272;
+  border-right: 1px solid #727272;
 }
 
 .games{
@@ -127,7 +126,7 @@ body.overflow-hidden {
 .rating{
   display: inline-block;
   float:left;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 .buy-button {
   position: relative;
@@ -149,5 +148,6 @@ body.overflow-hidden {
     color: #2F7DBD;
     font-weight: 700;
     font-family: "Helvetica Neue", "Arial", sans-serif;
+    padding-bottom: 2.5%;
   }
 }
