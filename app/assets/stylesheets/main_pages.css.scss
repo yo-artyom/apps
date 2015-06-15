@@ -7,13 +7,13 @@ $height: 2400px;//при высоте 1200
   margin: 0;
   border: 0;
   font-family: Helvetica Neue;
-  
     //overflow-y: hidden;
 }
 
 body {
   background: #eee;
   height: 100%;
+  overflow: hidden;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .container{
@@ -109,6 +109,7 @@ body {
 
 .item-image{
   width: 25%;
+  height: 100%;
   display: inline-block;
   padding: 5% 5.5% 5% 2.5%;
   float: left;
