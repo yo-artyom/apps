@@ -12,11 +12,14 @@ $height: 2400px;//при высоте 1200
 
 body {
   background: #eee;
-  height: 2000px;
-  overflow: hidden;
+  height: 100%;
+
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.container{
 
+  height: 100%;
+}
 .up-row{
   background: #f7f7f7;
   text-align: center;

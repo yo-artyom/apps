@@ -31,6 +31,7 @@ gem 'spring',        group: :development
 gem 'paperclip'
 gem 'carrierwave'
 gem 'mini_magick'
+
 group :development do
   gem 'capistrano', '~>2.15.5'
 end
