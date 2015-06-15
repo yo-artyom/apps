@@ -64,7 +64,7 @@ role :db,             deploy_server, :primary => true
 set :rvm_ruby_string, "2.1.5"
 set :rake,            "rvm use #{rvm_ruby_string} do bundle exec rake"
 set :bundle_cmd,      "rvm use #{rvm_ruby_string} do bundle"
-
+set :shared_children, shared_children + %w{public/uploads}
 # Настройка системы контроля версий и репозитария,
 # по умолчанию - git, если используется иная система версий,
 # нужно изменить значение scm.
