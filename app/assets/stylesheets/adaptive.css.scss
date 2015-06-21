@@ -23,13 +23,11 @@
   .col:nth-child(even) {background: rgba(67, 169, 255, 0.50);}
 
   .buy-button:nth-child(odd){
-    background-color: rgba(67, 169, 255, 0.50);
     a{
       color: #fff;
     }
   }
   .buy-button:nth-child(even) {
-    background-color: #ffffff;
     a{
       color: rgba(67, 169, 255, 0.50);
     }
