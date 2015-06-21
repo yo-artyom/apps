@@ -18,6 +18,23 @@
     font-size: 1.5em;
   }
 
+  //чередование цветов
+  .col:nth-child(odd)  {background-color: #ffffff;  }
+  .col:nth-child(even) {background: rgba(67, 169, 255, 0.50);}
+
+  .buy-button:nth-child(odd){
+    background-color: rgba(67, 169, 255, 0.50);
+    a{
+      color: #fff;
+    }
+  }
+  .buy-button:nth-child(even) {
+    background-color: #ffffff;
+    a{
+      color: rgba(67, 169, 255, 0.50);
+    }
+  }
+
 
   .item-image{
     height: auto!important;
@@ -47,6 +64,7 @@
     width: 64px !important;
     height: 64px !important;
   }
+
   //СЛАЙДЕР
   .info-panel-content{
     h1{
@@ -56,6 +74,7 @@
       font-size: 2em !important;
     }
   }
+
 }
 
 /* Large Devices, Wide Screens */
