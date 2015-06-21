@@ -1,18 +1,22 @@
 /* Small Devices, Tablets */
-@media only screen and (max-device-width : 640px) {
+@media only screen and (max-width : 640px) {
   h1{
     font-size: 3em;
   }
   .col{
     width: 100% !important;
   }
+  .nav-border {
+    width: 80% !important;
+  }
   .nav li{
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
+
   .item-image{
-    height: 100%;
-    width: 25%;
+    height: 100%!important;
+    width: 25%!important;
     display: inline-block;
     padding: 0% 5.5% 0% 2.5%;
 
