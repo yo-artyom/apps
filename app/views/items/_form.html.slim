@@ -37,8 +37,9 @@
     label
       h2 Рейтинг
     =f.text_field :rating, class: 'write'
-
-  h2 Ссылки
+  p
+    h2 Ссылки
+    |(в случае отсутствии ссылки- ставь #)
   .icon
     label
       h3 Android
@@ -49,7 +50,8 @@
     =f.text_field :iphone_link, class: 'write'
   .icon
     label
-      h3 Ipad 
+      h3 Ipad
+
     =f.text_field :ipad_link, class: 'write'
 
   .actions
