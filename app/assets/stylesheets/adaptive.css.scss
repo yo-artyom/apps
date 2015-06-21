@@ -19,8 +19,8 @@
   }
 
   //чередование цветов
-  .col:nth-child(odd)  {background-color: #ffffff;  }
-  .col:nth-child(even) {background: rgba(67, 169, 255, 0.50);}
+  .apps:nth-child(odd)  {background-color: #ffffff;  }
+  .apps:nth-child(even) {background: rgba(67, 169, 255, 0.50);}
 
   .buy-button:nth-child(odd){
     a{
@@ -53,6 +53,7 @@
     }
   }
   .buy-button{
+    background-color: rgba(67, 169, 255, 0.50);
     a{
       font-size: 3em !important;
       padding-bottom: 1%;
