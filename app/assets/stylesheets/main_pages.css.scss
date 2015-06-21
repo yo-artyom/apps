@@ -6,16 +6,16 @@ $height: 2400px;//при высоте 1200
   padding: 0;
   margin: 0;
   border: 0;
-  font-family: Helvetica Neue;
-    //overflow-y: hidden;
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+
+  //overflow-y: hidden;
 }
 
 body {
   background: #eee;
   height: 100%;
-  //overflow: hidden;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+  }
 .container{
 
   height: 100%;
@@ -39,7 +39,7 @@ body {
 
 .nav-border{
   display: inline-block;
-  width: 60%;
+  width: 50%;
   border-radius: 16px 16px 16px 16px;
   -moz-border-radius: 16px 16px 16px 16px;
   -webkit-border-radius: 16px 16px 16px 16px;
@@ -50,6 +50,7 @@ body {
   display: table-cell;
   width: 50%;
   float: left;
+  font-size: 1.5em;
   text-align: center;
   background-color: #f4faec;
   color: #2f7dbd;
