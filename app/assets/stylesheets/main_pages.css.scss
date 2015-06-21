@@ -9,13 +9,14 @@ $height: 2400px;//при высоте 1200
   font-family: "Helvetica Neue";
   font-weight: lighter;
 
-  //overflow-y: hidden;
 }
 
 body {
   background: #eee;
   height: 100%;
+  overflow: hidden;
   }
+
 .container{
 
   height: 100%;
