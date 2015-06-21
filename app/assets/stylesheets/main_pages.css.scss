@@ -24,7 +24,7 @@ body {
 .up-row{
   background: #f7f7f7;
   text-align: center;
-  border-bottom: 1px solid #adadad;
+
 
 }
 .nav {
@@ -126,6 +126,7 @@ body {
 .buy-button {
   position: relative;
   border: 1px solid #2f7dbd;
+  background-color: #007aff;
   width: 25%;
   height: 20%;
   margin-right: 5%;
@@ -138,7 +139,7 @@ body {
   -webkit-border-radius: 16px 16px 16px 16px;
   a{
     font-size: 1.7em;
-    color: #2F7DBD;
+    color: #fff;
     padding-bottom: 2.5%;
   }
 }
