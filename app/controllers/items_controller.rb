@@ -62,6 +62,8 @@ class ItemsController < ApplicationController
     end
   end
 
+
+
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_item
@@ -70,6 +72,9 @@ class ItemsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def item_params
-    params.require(:item).permit(:name, :desc, :app_type, :rating, :item_image)
+    params.require(:item).permit(:name, :desc, :app_type, :rating, :item_image,
+                                 :android_link, :iphone_link, :ipad_link)
   end
+
+
 end

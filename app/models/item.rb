@@ -13,6 +13,7 @@ class Item < ActiveRecord::Base
   scope :only_app,  ->{ where(app_type: 'App')}
   scope :only_game, ->{ where(app_type: 'Game')}
 
+
 end
 
 

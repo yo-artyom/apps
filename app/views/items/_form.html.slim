@@ -38,6 +38,19 @@
       h2 Рейтинг
     =f.text_field :rating, class: 'write'
 
+  h2 Ссылки
+  .icon
+    label
+      h3 Android
+    =f.text_field :android_link, class: 'write'
+  .icon
+    label
+      h3 Iphone
+    =f.text_field :iphone_link, class: 'write'
+  .icon
+    label
+      h3 Ipad 
+    =f.text_field :ipad_link, class: 'write'
 
   .actions
     = f.submit  'Готово'

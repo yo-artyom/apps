@@ -14,6 +14,7 @@
                 -for j in 0..(4-item.rating)
                   =image_tag('stars_empty.png', size: '27x27')
           .buy-button
-            =link_to 'Скачать', '#'
+            =link_to 'Скачать', return_link(item,detect_device)
+
 -else
   h1 ПРИЛОЖЕНИЙ НЕТ
