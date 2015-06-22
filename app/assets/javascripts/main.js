@@ -1,7 +1,8 @@
 var ready;
 var selected_item;
 ready = function() {
-
+    $('.apps:even').css('background-color', '#ffffff');
+    $('.apps:odd').css('background-color', '#DEE5EB');
     //open
     $('#items').find('.item-info').on('click', function(event){
         event.preventDefault();
