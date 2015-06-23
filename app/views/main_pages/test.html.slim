@@ -1,17 +1,24 @@
 .up-row
   h1 1APPS
-ul class='nav'
-  .nav-border
-    =link_to(game_path)
-      li class='active'
-        p Игры
-    =link_to(app_path)
-      li
-        p Приложения
+  ul class='nav'
+    .nav-border
+      =link_to(game_path)
+        li class='active'
+          p Игры
+      =link_to(app_path)
+        li
+          p Приложения
 
-#demo
-  ul
-    li class='first dragend-page'
-      =render 'main_pages/grid' , items: @games
-    li class='dragend-page'
-      =render 'main_pages/grid' , items: @apps
+#items
+  #demo
+    ul
+      li class='first dragend-page'
+        =render 'main_pages/grid' , items: @games
+      li class='dragend-page'
+        =render 'main_pages/grid' , items: @apps
+  .overlay
+  .close
+
+.descriptions
+  =render 'main_pages/description', item: @apps
+  =render 'main_pages/description',  item: @games

@@ -1,13 +1,13 @@
 .up-row
   h1 1APPS
-ul class='nav'
-  .nav-border
-    =link_to(game_path)
-      li class='active'
-        p Игры
-    =link_to(app_path)
-      li
-        p  Приложения
+  ul class='nav'
+    .nav-border
+      =link_to(game_path)
+        li class='active'
+          p Игры
+      =link_to(app_path)
+        li
+          p  Приложения
 
 #items
   =render 'main_pages/grid' , items: @games
