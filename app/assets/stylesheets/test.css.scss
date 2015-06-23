@@ -1,36 +1,5 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-body {
-
-}
-
 #demo {
   visibility: hidden;
-}
-
-#dragend h1 {
-  font-size: 15px;
-  font-weight: normal;
-  margin-bottom: 12px;
-}
-
-#dragend a {
-  text-decoration: underline;
-  color: #fff
-}
-
-.button {
-  height: 0;
-  width: 0;
-  position: absolute;
-  top: 250px;
-  left: 50%;
-  cursor: pointer;
-  border-style: solid;
 }
 
 .button.deactivated {
