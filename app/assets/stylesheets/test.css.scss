@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+
+}
+
+#demo {
+  visibility: hidden;
+}
+
+#dragend h1 {
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+
+#dragend a {
+  text-decoration: underline;
+  color: #fff
+}
+
+.button {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  cursor: pointer;
+  border-style: solid;
+}
+
+.button.deactivated {
+  opacity: 0.2;
+  cursor: default;
+}
+
+.prev {
+  margin-left: -320px;
+  border-width: 50px 50px 50px 0;
+  border-color: transparent #333 transparent transparent;
+}
+
+.next {
+  margin-left: 270px;
+  border-width: 50px 0 50px 50px;
+  border-color: transparent transparent transparent #333;
+}
+
+

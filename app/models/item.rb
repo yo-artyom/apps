@@ -4,7 +4,7 @@ class Item < ActiveRecord::Base
 
   mount_uploader :item_image, ItemImageUploader
 
-  validates :name, :desc, presence: true
+  validates :name, :desc,:iphone_link,:android_link,:ipad_link, presence: true
   validates :app_type, inclusion: APP_TYPE
   validates :rating,
             numericality: { greater_than: 0, less_than_or_equal_to: 5 },

@@ -8,7 +8,8 @@ class MainPagesController < ApplicationController
     @games = Item.only_game
   end
 
-  def updates
-
+  def test
+    @apps =  Item.only_app
+    @games = Item.only_game
   end
 end
