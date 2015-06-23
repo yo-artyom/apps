@@ -1,8 +1,10 @@
+
+
 .items-container
   p id="notice"
       =notice
   .item-new
-    =link_to 'Новое ', new_item_path
+    =link_to 'Новое приложение', new_item_path
 
 
   .table-form
@@ -27,6 +29,7 @@
           td =link_to 'Удалить', item, :method =>  :delete, data: { confirm: 'Точно удалить?' }
 
 
-    br
+  .footer-items
+    h2 Разработка Артём Зафрански
 
 
