@@ -23,6 +23,8 @@
     label
       h2  Картинка
     br
+      h3 Оптимальный размер картинки  87x87 px
+    br
     = image_tag(@item.item_image.url, size: '80x80') if @item.item_image.url
     .image-field
       = f.file_field :item_image
