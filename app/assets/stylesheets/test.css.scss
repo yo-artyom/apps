@@ -2,21 +2,21 @@
   visibility: hidden;
 }
 
-.button.deactivated {
-  opacity: 0.2;
-  cursor: default;
+
+.button {
+
+  cursor: pointer;
+  border-style: solid;
 }
 
+
 .prev {
-  margin-left: -320px;
-  border-width: 50px 50px 50px 0;
   border-color: transparent #333 transparent transparent;
 }
 
 .next {
-  margin-left: 270px;
-  border-width: 50px 0 50px 50px;
   border-color: transparent transparent transparent #333;
 }
+
 
 

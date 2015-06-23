@@ -2,17 +2,15 @@
   h1 1APPS
   ul class='nav'
     .nav-border
-      =link_to '#'
-        li class='active'
-          p Игры
-      =link_to '#'
-        li
-          p Приложения
+      li data-page = 1 class='active'
+        |Игры
+      li data-page = 2
+        |Приложения
 
 #items
   #demo
     ul
-      li class='first dragend-page'
+      li class='dragend-page'
         =render 'main_pages/grid' , items: @games
       li class='dragend-page'
         =render 'main_pages/grid' , items: @apps

@@ -39,7 +39,7 @@ body {
 
 .nav-border{
   display: inline-block;
-  width: 50%;
+  width: 60%;
   border-radius: 16px 16px 16px 16px;
   -moz-border-radius: 16px 16px 16px 16px;
   -webkit-border-radius: 16px 16px 16px 16px;
@@ -56,12 +56,12 @@ body {
   color: #2f7dbd;
   box-sizing: border-box;
   cursor: pointer;
-  line-height: 312.5%;
-    height: 100%;
-
+  //line-height: 312.5%;
+  font-size: 3.5em;
+  height: 100%;
 }
 .nav li p{
-  font-size: 1.8em;
+
 }
 .nav li.active {
   background: #007aff;
