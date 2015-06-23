@@ -11,7 +11,7 @@
     table
       tr
         td Название
-        td Описание
+        td Ссылки
         td Тип приложения
         td Рейтинг
         td Пикча
@@ -21,7 +21,13 @@
       -@items.each do |item|
         tr
           td =item.name
-          td =truncate(item.desc, :length => 20)
+          td
+            =item.iphone_link
+            br
+            =item.ipad_link
+            br
+            =item.android_link
+
           td =item.app_type
           td =item.rating
           td = image_tag(item.item_image.url, size: "80x80")
