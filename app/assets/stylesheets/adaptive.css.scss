@@ -1,5 +1,5 @@
 /* Small Devices, Tablets */
-@media only screen and (max-device-width : 640px){
+@media only screen and (max-width : 640px){
   * {
     font-family: "Helvetica Neue";
     font-weight: lighter;
@@ -8,20 +8,24 @@
   h1{
     font-size: 1.5em;
   }
+  .up-row{
+    height: 20%;
+  }
   .col{
     width: 100% !important;
   }
   .nav-border {
     width: 85% !important;
+    height: 100%;
   }
   .nav li{
-    font-size: 1.4em !important;
+    font-size: 1.6em !important;
 
   }
 
 
   #items {
-    margin-top: 25% !important;
+    margin-top: 10%!important;
   }
   .item-image{
     height: auto!important;

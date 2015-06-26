@@ -7,7 +7,7 @@ $height: 2400px;//при высоте 1200
   margin: 0;
   border: 0;
   font-family: "Helvetica Neue";
-  font-weight: lighter;
+  font-weight: 200;
 
 }
 
@@ -26,9 +26,10 @@ body {
   text-align: center;
   border-bottom: 1px solid #adadad;
   position: fixed;
+  height: 20%;
   z-index: 1;
   width: 100%;
-  display: block;
+  display: inline-block;
 
 }
 .nav {
@@ -36,9 +37,7 @@ body {
   list-style: none;
   text-align: center;
   width: 100%;
-  padding-left: 10%;
   background: #f7f7f7;
-  padding: 1% 0%;
 
 }
 
@@ -50,19 +49,19 @@ body {
   -webkit-border-radius: 16px 16px 16px 16px;
   border: 1px solid #2f7dbd;
   overflow: hidden;
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 .nav li {
   display: table-cell;
   width: 50%;
+  padding: 0.7% 0.7%;
   float: left;
-  font-size: 1.5em;
+  font-size: 2.8em;
   text-align: center;
   background-color: #f4faec;
   color: #2f7dbd;
   box-sizing: border-box;
-  cursor: pointer;
-  //line-height: 312.5%;
-  font-size: 3.5em;
   height: 100%;
 }
 .nav li.active {
@@ -71,7 +70,7 @@ body {
 }
 
 #items {
-  margin-top: 10.6%;
+  margin-top: 10%;
   width: 100%;
   overflow: hidden;
   display: inline-block;
