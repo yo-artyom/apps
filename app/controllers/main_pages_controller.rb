@@ -4,6 +4,10 @@ class MainPagesController < ApplicationController
     @apps =  Item.only_app
   end
 
+  def slider
+    @apps =  Item.only_app
+    @games = Item.only_game
+  end
   def game_page
     @games = Item.only_game
   end
