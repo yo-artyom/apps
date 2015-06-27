@@ -1,5 +1,5 @@
 /* Small Devices, Tablets */
-@media only screen and (max-device-width : 640px){
+@media only screen and (max-width : 640px){
   * {
     font-family: "Helvetica Neue";
     font-weight: lighter;
@@ -13,7 +13,7 @@
   }
   .nav-border {
     width: 85% !important;
-    border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px
 
   }
   .nav li{
