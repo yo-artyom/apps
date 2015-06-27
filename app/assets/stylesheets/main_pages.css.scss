@@ -87,7 +87,15 @@ body {
   height: 100%;
   float: right;
   border-collapse: collapse;
-  border-bottom: 1px solid #adadad;
+  border-bottom: 10px solid;
+  border-right: 10px solid;
+  -moz-border-image: -moz-linear-gradient(left, #ffffff 0%, #c388cc 49%, #ffffff 100%); /* FF3.6+ */
+  -webkit-border-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(49%,#c388cc), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+  -webkit-border-image: -webkit-linear-gradient(left, #ffffff 0%,#c388cc 49%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+  -o-border-image: -o-linear-gradient(left, #ffffff 0%,#c388cc 49%,#ffffff 100%); /* Opera 11.10+ */
+  -ms-border-image: -ms-linear-gradient(left, #ffffff 0%,#c388cc 49%,#ffffff 100%); /* IE10+ */
+  border-image: linear-gradient(to right, #ffffff 0%,#c388cc 49%,#ffffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
   border-right: 1px solid #adadad;
 
   a{

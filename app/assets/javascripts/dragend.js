@@ -95,8 +95,8 @@
         scribe             : 0,
         page               : 1,
         borderBetweenPages : 0,
-        duration           : 450,
-        preventDrag        : false
+        duration           : 350,
+        preventDrag        : true
       },
 
       isTouch = 'ontouchstart' in win,

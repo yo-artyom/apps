@@ -1,7 +1,6 @@
 var ready;
 var selected_item;
-ready = function(event) {
-    event.preventDefault();
+ready = function() {
     $('.apps:odd').css('background-color','#ffffff');
     $('.apps:even').css('background-color','#DEE5EB');
     //open
