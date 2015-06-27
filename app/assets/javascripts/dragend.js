@@ -95,7 +95,7 @@
         scribe             : 0,
         page               : 1,
         borderBetweenPages : 0,
-        duration           : 20,
+        duration           : 450,
         preventDrag        : false
       },
 

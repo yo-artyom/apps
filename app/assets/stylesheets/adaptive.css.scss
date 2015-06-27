@@ -1,13 +1,10 @@
 /* Small Devices, Tablets */
-@media only screen and (max-width : 640px){
+@media only screen and (max-device-width : 640px){
   * {
     font-family: "Helvetica Neue";
     font-weight: lighter;
   }
 
-  h1{
-    font-size: 1.5em;
-  }
   .col{
     width: 100% !important;
   }
@@ -17,7 +14,7 @@
 
   }
   .nav li{
-    font-size: 1.4em !important;
+    font-size: 1.3em !important;
 
   }
 
@@ -33,7 +30,7 @@
   }
   .item-name{
     h2{
-      font-size: 1.5em !important;
+      font-size: 1.2em !important;
     }
   }
   .rating{
@@ -57,12 +54,17 @@
   //СЛАЙДЕР
   .info-panel-content{
     h1{
-      font-size: 3em !important;
+      font-size: 1.4em !important;
     }
     p{
-      font-size: 2em !important;
+      font-size: 1.1em !important;
     }
   }
+  .info-panel-container{
+    width: 75%!important;
+  }
+
+
 
 }
 
