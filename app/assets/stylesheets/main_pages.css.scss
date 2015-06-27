@@ -25,9 +25,7 @@ body {
   background: #f7f7f7;
   text-align: center;
   border-bottom: 1px solid #adadad;
-  position: fixed;
   height: 20%;
-  z-index: 1;
   width: 100%;
   display: inline-block;
 
@@ -70,7 +68,6 @@ body {
 }
 
 #items {
-  margin-top: 10%;
   width: 100%;
   overflow: hidden;
   display: inline-block;
