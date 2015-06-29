@@ -4,15 +4,13 @@ class MainPagesController < ApplicationController
     @apps =  Item.only_app
   end
 
-  def slider
-    @apps =  Item.only_app
-    @games = Item.only_game
-  end
   def game_page
+    array= []
+    array.flatten()
     @games = Item.only_game
   end
 
-  def test
+  def main
     @apps =  Item.only_app
     @games = Item.only_game
   end

@@ -1,8 +1,9 @@
-// Place all the styles related to the main_pages controller here.
+  // Place all the styles related to the main_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $height: 2400px;//при высоте 1200
 * {
+  outline: none;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   padding: 0;
   margin: 0;
@@ -88,8 +89,17 @@ body {
   height: 100%;
   float: right;
   border-collapse: collapse;
-  border-bottom: 1px solid #adadad;
-  border-right: 1px solid #adadad;
+  //////////////
+  border-style: solid;
+  border-width: 1px;
+  -moz-border-image: url(http://cs622523.vk.me/v622523705/3c8b0/GBq27lZbXdk.jpg) 27 stretch;
+  -webkit-border-image: url(http://cs622523.vk.me/v622523705/3c8b0/GBq27lZbXdk.jpg) 27 stretch;
+  -o-border-image: url(http://cs622523.vk.me/v622523705/3c8b0/GBq27lZbXdk.jpg) 27 stretch;
+  border-image: url(http://cs622523.vk.me/v622523705/3c8b0/GBq27lZbXdk.jpg) 27 fill stretch;
+
+  //////////////
+  /*border-bottom: 1px solid #adadad;
+  border-right: 1px solid #adadad;*/
   a{
     height: 100%;
     width: 100%;
