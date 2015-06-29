@@ -24,6 +24,7 @@ body {
   height: 100%;
 }
 .up-row{
+  z-index: 1;
   background: #f7f7f7;
   text-align: center;
   border-bottom: 1px solid #adadad;
@@ -50,8 +51,8 @@ body {
   border: 1px solid #2f7dbd;
   
   overflow: hidden;
-  margin-bottom: 2%;
-  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-top: 3%;
 }
 .nav li {
   display: table-cell;
