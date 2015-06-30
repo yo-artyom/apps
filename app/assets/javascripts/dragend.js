@@ -82,7 +82,7 @@
       defaultSettings = {
         pageClass          : "dragend-page",
         direction          : "horizontal",
-        minDragDistance    : "30000",
+        minDragDistance    : "300",
         onSwipeStart       : noop,
         onSwipeEnd         : noop,
         onDragStart        : noop,
@@ -96,7 +96,7 @@
         page               : 1,
         borderBetweenPages : 0,
         duration           : 350,
-        preventDrag        : false
+        preventDrag        : true
       },
 
       isTouch = 'ontouchstart' in win,
