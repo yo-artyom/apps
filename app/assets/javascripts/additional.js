@@ -12,14 +12,12 @@ $(function() {
 
     $(".nav").click(function() {
         var page = $(event.target).data("page");
-
         $("#demo").dragend({
             scrollToPage: page
         });
-
         $(event.target).addClass("active");
 
-    })
+    });
 
 });
 

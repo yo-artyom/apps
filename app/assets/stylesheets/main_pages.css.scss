@@ -16,7 +16,7 @@ $height: 2400px;//при высоте 1200
 body {
   background: #eee;
   height: 100%;
-  //overflow: hidden;
+  overflow: hidden;
   }
 
 .container{
@@ -70,7 +70,25 @@ body {
   background: #007aff;
   color: #e4fffc;
 }
+//////////////////////////////
+  .nav li:focus{
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.3s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 0.3s;
+  }
+  @-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
 
+  /* Standard syntax */
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+/////////////////////////
 #items {
   width: 100%;
   overflow: hidden;
