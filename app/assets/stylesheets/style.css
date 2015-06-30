@@ -1,7 +1,5 @@
 /* --------------------------------
-
 Primary style
-
 -------------------------------- */
 *, *::after, *::before {
     -webkit-box-sizing: border-box;
@@ -31,9 +29,7 @@ a {
 }
 
 /* --------------------------------
-
 Main Components
-
 -------------------------------- */
 .cd-header {
     height: 100px;
@@ -588,9 +584,7 @@ Main Components
 }
 
 /* --------------------------------
-
 xkeyframes
-
 -------------------------------- */
 @-webkit-keyframes cd-rotate {
     0% {
@@ -785,9 +779,7 @@ xkeyframes
     }
 }
 /* --------------------------------
-
 Primary style
-
 -------------------------------- */
 *, *::after, *::before {
     -webkit-box-sizing: border-box;
@@ -812,9 +804,7 @@ a {
 }
 
 /* --------------------------------
-
 Form
-
 -------------------------------- */
 .cd-form {
     width: 90%;
@@ -1119,9 +1109,7 @@ Form
     }
 }
 /* --------------------------------
-
 Custom icons
-
 -------------------------------- */
 .cd-form .icon input, .cd-form .icon select, .cd-form .icon textarea {
     padding-left: 54px !important;
@@ -1134,9 +1122,7 @@ Custom icons
 }
 
 /* --------------------------------
-
 FLoating labels
-
 -------------------------------- */
 .js .floating-labels div {
     margin: 28px 0;
