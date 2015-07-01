@@ -55,10 +55,7 @@
       padding-bottom: 1%;
     }
   }
-  .close{
-    width: 64px !important;
-    height: 64px !important;
-  }
+
 
   //СЛАЙДЕР
   .info-panel-content{
@@ -73,8 +70,10 @@
     width: 75%!important;
     text-align: center;
     .buy-button{
+      position: absolute;
       height: 2%;
-      margin: 0% 25% 0% 0%;
+      margin: 0% 0% 0% 0%;
+      width: 80px;
 
     }
   }
@@ -88,10 +87,7 @@
       padding-bottom: 1%;
     }
   }
-  .close{
-    width: 64px !important;
-    height: 64px !important;
-  }
+
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-device-width : 1200px) {
