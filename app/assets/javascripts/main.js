@@ -11,7 +11,7 @@ ready = function() {
     $('#items').find('.item-info').on('click', function(event){
         event.preventDefault();
         selected_item = $(this).data('type');
-
+        $('body').addClass('overflow-hidden');
         $('.info-panel-'+selected_item).addClass('is-visible');
         $('.overlay').fadeIn(300);
         $('.close').addClass('is-visible ')
