@@ -1,11 +1,14 @@
+.important, .done, .unimportant, .done{
+  font-weight: 900!important;
+}
 .important{
-  color: red!important;
+  color: #cc1000 !important;
 }
 .warning{
   color: yellow!important;
 }
 .unimportant{
-  color: #007AFF!important;
+  color: #002c59 !important;
 }
 .done{
   color: green!important;

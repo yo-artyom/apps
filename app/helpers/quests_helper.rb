@@ -1,6 +1,6 @@
 module QuestsHelper
   def status_css(status)
-    if status == 'Cрочно'
+    if status == 'Срочно'
       return 'important'
     else if status == 'Важно'
            return 'warning'
