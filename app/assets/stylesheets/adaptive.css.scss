@@ -10,11 +10,12 @@
   }
   .nav-border {
     width: 85% !important;
-    -webkit-border-radius: 8px 8px 8px 8px
-
+    -webkit-border-radius: 8px 8px 8px 8px;
   }
   .nav a{
-    font-size: 1.3em !important;
+    height: 100%;
+    font-size: 1.2em !important;
+
   }
 
 
@@ -49,7 +50,7 @@
   .buy-button{
     background-color: rgba(67, 169, 255, 0.50);
     a{
-      font-size: 1.2em !important;
+      font-size: 1em !important;
       padding-bottom: 1%;
     }
   }
@@ -76,7 +77,7 @@
   .buy-button{
     background-color: rgba(67, 169, 255, 0.50);
     a{
-      font-size: 1.2em !important;
+      font-size: 1em !important;
       padding-bottom: 1%;
     }
   }
