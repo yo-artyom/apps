@@ -1,13 +1,17 @@
 var ready;
 var selected_item;
-ready = function() {
-    $(".slider").HSlider(); //инициализируем слайдер
 
+ready = function() {
+
+    $(".slider").HSlider(); //инициализируем слайдер
     $('.apps:odd').css('background-color','#ffffff'); //чередуем цвет строк
     $('.apps:even').css('background-color','#DEE5EB');
 
-
-    $('#items').find('.item-info').on('click', function(event){ //выдвижное меню, клик на открытие
+    window.onerror = function (msg, url, line) {
+        alert(msg + "\n" + url + "\n" + "\n" + line);
+        return true;
+    };
+    $('.slider').find('.apps').on('click', function(event){ //выдвижное меню, клик на открытие
         event.preventDefault();
         selected_item = $(this).data('type');
 
@@ -16,7 +20,6 @@ ready = function() {
         $('.close').addClass('is-visible ')
     });
 
-
     $(document).on('click', '.close, .overlay ', function(event){ //выдвижное меню, клик на закрытие
         event.preventDefault();
         $('body').removeClass('overflow-hidden');
@@ -24,6 +27,8 @@ ready = function() {
         $('.overlay').fadeOut(300);
         $('.close').removeClass('is-visible');
     });
+
+
 };
 
 $(document).ready(ready);

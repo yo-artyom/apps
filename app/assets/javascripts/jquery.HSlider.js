@@ -13,15 +13,12 @@
 
 	var defaults = {
 		easing:"ease",
-		animationTime:1000,
-		pagination:true,
-		description:true
+		animationTime:500,
+		pagination:true
+
 	};
 
-	/*------------------------------------------------*/
-	/*  Credit: Eike Send for the awesome swipe event */    
-	/*------------------------------------------------*/
-	
+
 	$.fn.swipeEvents = function() {
 		return this.each(function() {
 
@@ -69,7 +66,7 @@
 		});
 	};
 
-	/*   swipe event End  */    
+	/*   swipe event End  */
 	/*------------------------------------------------*/
 
 	$.fn.HSlider = function(options){
@@ -79,10 +76,10 @@
 			total = sections.length,
 			quiet = false,
 			paginationList = "";
-	
+
 		$.fn.transformPage = function(settings,pos){
 			$(this).css({
-				"-webkit-transform": "translate3d(" + pos + "%, 0 ,0)", 
+				"-webkit-transform": "translate3d(" + pos + "%, 0 ,0)",
 				"-webkit-transition": "all " + settings.animationTime + "ms " + settings.easing,
 				"-moz-transform": "translate3d(" + pos + "%, 0 ,0)",
 				"-moz-transition": "all " + settings.animationTime + "ms " + settings.easing,
@@ -101,7 +98,7 @@
 
 				current.removeClass("active")
 				next.addClass("active");
-				
+
 				//for pagination
 				if(settings.pagination == true) {
 					$(".pagination li a" + "[data-index='" + indexNow + "']").removeClass("active");
@@ -121,7 +118,7 @@
 
 				current.removeClass("active")
 				next.addClass("active");
-				
+
 				//for pagination
 				if(settings.pagination == true) {
 					$(".pagination li a" + "[data-index='" + indexNow + "']").removeClass("active");
@@ -132,7 +129,7 @@
 				$(this).transformPage(settings, pos);
 			};
 		}
-		
+
 
 		function ready(event,delta){
 
@@ -155,44 +152,9 @@
 		
 		}
 
-		//init Style
-		wrapper.addClass("HSlider").css({
-			"position":"relative",
-			width:"100%",
-			height:"100%",
-		});
-		$.each(sections,function(i){
-			$(this).css({
-				position:"absolute",
-				width:"100%",
-				height:"100%",
-				left:i*100 +"%"
-			}).addClass("section").attr("data-index", i+1);
-			$(this).find("img").css({
-				minWidth: "100%",
-				minHeight: "100%",
-				position:"absolute",
-				zIndex:1
-			})
-			$(this).find("article").css({
-				position:"absolute",
-				boxSizing:"border-box",
-				width:"100%",
-				bottom:0,
-				padding:42,
-				zIndex:4
-			})
-			if(settings.pagination == true) {
-				paginationList += "<li><a data-index='"+(i+1)+"' href='#" + (i+1) + "'></a></li>"
-			}
-		});
+
 
 		//Create Pagination
-		if(settings.pagination == true) {
-			$("<ul class='pagination'>" + paginationList + "</ul>").prependTo("body");
-			posTop = (wrapper.find(".HSlider").height() / 2) * -1;
-			wrapper.find(".HSlider").css("margin-top", posTop);
-		}
 
 		if(settings.pagination == true)  {
 			$(".pagination li a").click(function (){
@@ -235,7 +197,7 @@
 		});
 
 
-		return false;
+
 	}
 
 })(window.jQuery);

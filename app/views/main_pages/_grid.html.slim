@@ -2,8 +2,8 @@
   -items.each_slice( items.count/2 ) do |slice|
     .col
       -slice.each do |item|
-        .apps
-          .item-info data-type= "#{item.id}"
+        .apps data-type= "#{item.id}"
+          .item-info
             =image_tag(item.item_image.url, class: 'item-image')
             .item-name
               h2
