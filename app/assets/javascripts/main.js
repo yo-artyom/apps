@@ -1,10 +1,13 @@
 var ready;
 var selected_item;
 ready = function() {
-    $('.apps:odd').css('background-color','#ffffff');
+    $(".slider").HSlider(); //инициализируем слайдер
+
+    $('.apps:odd').css('background-color','#ffffff'); //чередуем цвет строк
     $('.apps:even').css('background-color','#DEE5EB');
-    //open
-    $('#items').find('.item-info').on('click', function(event){
+
+
+    $('#items').find('.item-info').on('click', function(event){ //выдвижное меню, клик на открытие
         event.preventDefault();
         selected_item = $(this).data('type');
 
@@ -13,8 +16,8 @@ ready = function() {
         $('.close').addClass('is-visible ')
     });
 
-    //close
-    $(document).on('click', '.close, .overlay ', function(event){
+
+    $(document).on('click', '.close, .overlay ', function(event){ //выдвижное меню, клик на закрытие
         event.preventDefault();
         $('body').removeClass('overflow-hidden');
         $('.info-panel-'+selected_item).removeClass('is-visible');

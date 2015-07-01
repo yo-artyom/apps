@@ -1,21 +1,22 @@
 .up-row
-  ul class='nav' id='slider'
+  ul class='nav pagination'
     .nav-border
-      li data-page = 1 class='active'
-        |Игры
-      li data-page = 2
-        |Приложения
-
+      li data-index = 1 class='active'
+        a data-index='1' href='#'
+          |Игры
+      li data-index = 2
+        a data-index='2' href='#'
+          |Приложения
 #items
-  #demo
-    ul
-      li class='dragend-page'
+  .wrap
+    .slider
+      .page-1.section data-index='1'
         =render 'main_pages/grid' , items: @games
-      li class='dragend-page'
+      .page-2.section data-index='2'
         =render 'main_pages/grid' , items: @apps
   .overlay
   .close
 
 .descriptions
   =render 'main_pages/description', item: @apps
-  =render 'main_pages/description',  item: @games
+  =render 'main_pages/description', item: @games

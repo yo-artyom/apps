@@ -14,4 +14,9 @@ class MainPagesController < ApplicationController
     @apps =  Item.only_app
     @games = Item.only_game
   end
+
+  def test
+    @apps =  Item.only_app
+    @games = Item.only_game
+  end
 end
