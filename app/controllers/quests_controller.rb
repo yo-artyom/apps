@@ -28,7 +28,7 @@ class QuestsController < ApplicationController
 
     respond_to do |format|
       if @quest.save
-        format.html { redirect_to @quest, notice: 'Quest was successfully created.' }
+        format.html { redirect_to quests_path, notice: 'Quest was successfully created.' }
         format.json { render :show, status: :created, location: @quest }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class QuestsController < ApplicationController
   def update
     respond_to do |format|
       if @quest.update(quest_params)
-        format.html { redirect_to @quest, notice: 'Quest was successfully updated.' }
+        format.html { redirect_to quests_path, notice: 'Quest was successfully updated.' }
         format.json { render :show, status: :ok, location: @quest }
       else
         format.html { render :edit }
