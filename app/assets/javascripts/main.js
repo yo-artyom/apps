@@ -1,5 +1,5 @@
 var ready;
-var selected_item;
+
 
 ready = function() {
 
@@ -7,13 +7,9 @@ ready = function() {
     $('.apps:odd').css('background-color','#ffffff'); //чередуем цвет строк
     $('.apps:even').css('background-color','#DEE5EB');
 
-    window.onerror = function (msg, url, line) {
-        alert(msg + "\n" + url + "\n" + "\n" + line);
-        return true;
-    };
-    $('.slider').find('.apps').on('click', function(event){ //выдвижное меню, клик на открытие
+    $('.slider').on('click', function(event){ //выдвижное меню, клик на открытие
         event.preventDefault();
-        selected_item = $(this).data('type');
+        selected_item = $(this).find('.apps').data('type');
 
         $('.info-panel-'+selected_item).addClass('is-visible');
         $('.overlay').fadeIn(300);

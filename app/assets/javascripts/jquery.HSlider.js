@@ -1,14 +1,3 @@
-/* ===========================================================
- * jquery-HSlider.js v1
- * ===========================================================
- * Copyright 2013 Hux.
- *
- * Create an Photo-first,Fullpage Slider,Modern website 
- * All animation is powered in CSS3
- * Only for modern broswer 
- *
- * ========================================================== */
-
 (function($){
 
 	var defaults = {
@@ -18,64 +7,12 @@
 
 	};
 
-
-	$.fn.swipeEvents = function() {
-		return this.each(function() {
-
-			var startX,
-				startY,
-				$this = $(this);
-
-			$this.bind('touchstart', touchstart);
-
-			function touchstart(event) {
-				var touches = event.originalEvent.touches;
-				if (touches && touches.length) {
-					startX = touches[0].pageX;
-					startY = touches[0].pageY;
-					$this.bind('touchmove', touchmove);
-				}
-				event.preventDefault();
-			}
-
-			function touchmove(event) {
-				var touches = event.originalEvent.touches;
-				if (touches && touches.length) {
-					var deltaX = startX - touches[0].pageX;
-					var deltaY = startY - touches[0].pageY;
-
-					if (deltaX >= 50) {
-						$this.trigger("swipeLeft");
-					}
-					if (deltaX <= -50) {
-						$this.trigger("swipeRight");
-					}
-					if (deltaY >= 50) {
-						$this.trigger("swipeUp");
-					}
-					if (deltaY <= -50) {
-						$this.trigger("swipeDown");
-					}
-					if (Math.abs(deltaX) >= 50 || Math.abs(deltaY) >= 50) {
-						$this.unbind('touchmove', touchmove);
-					}
-				}
-				event.preventDefault();
-			}
-
-		});
-	};
-
-	/*   swipe event End  */
-	/*------------------------------------------------*/
-
 	$.fn.HSlider = function(options){
 		var settings = $.extend({}, defaults, options),
 			wrapper = $(this),
 			sections = $("section"),
 			total = sections.length,
-			quiet = false,
-			paginationList = "";
+			quiet = false
 
 		$.fn.transformPage = function(settings,pos){
 			$(this).css({
@@ -145,14 +82,12 @@
 				setTimeout(function(){
 					quiet = false;
 					console.log("refresh!"+quiet);
-				} , settings.animationTime+200);   
+				} , settings.animationTime+200);
 			}else{
 				event.preventDefault();
 			}
-		
+
 		}
-
-
 
 		//Create Pagination
 
@@ -188,13 +123,6 @@
 			ready(event, delta);
 		});
 
-
-		//bind Touch Event
-		wrapper.swipeEvents().bind("swipeLeft",function(){
-			wrapper.slideLeft();
-		}).bind("swipeRight",function(){
-			wrapper.slideRight();
-		});
 
 
 
