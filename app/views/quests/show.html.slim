@@ -1,0 +1,13 @@
+p
+  strong Название:
+  = @quest.name
+p
+  strong Status:
+  = @quest.status
+p
+  strong Worker:
+  = @quest.worker
+
+= link_to 'Edit', edit_quest_path(@quest)
+'|
+= link_to 'Back', quests_path

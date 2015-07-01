@@ -1,0 +1,27 @@
+.item-new
+  = link_to 'Новое задание', new_quest_path
+.table-form
+  table
+    thead
+      tr
+        th Имя
+        th Статус
+        th Кто выполняет
+        th Описание
+        th
+        th
+
+    tbody
+      - @quests.each do |quest|
+        tr
+          td = quest.name
+          td class="#{status_css(quest.status)}"
+            = quest.status
+          td = quest.worker
+          td = quest.description
+          td = link_to 'Редактировать', edit_quest_path(quest)
+          td = link_to 'Удалить', quest, data: {:confirm => 'Уверен?'}, :method => :delete
+
+  br
+
+

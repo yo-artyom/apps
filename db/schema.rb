@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150621182424) do
+ActiveRecord::Schema.define(version: 20150701212136) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,15 @@ ActiveRecord::Schema.define(version: 20150621182424) do
     t.string   "android_link"
     t.string   "iphone_link"
     t.string   "ipad_link"
+  end
+
+  create_table "quests", force: true do |t|
+    t.string   "name"
+    t.string   "status"
+    t.string   "worker"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "description"
   end
 
   create_table "widgets", force: true do |t|
