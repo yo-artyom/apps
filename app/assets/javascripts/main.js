@@ -9,6 +9,10 @@ ready = function() {
 
     //open
     $('#items').find('.item-info').on('click', function(event){
+        $(document.body).on("touchmove", function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+        });
         event.preventDefault();
         selected_item = $(this).data('type');
         $('body').addClass('overflow-hidden');
