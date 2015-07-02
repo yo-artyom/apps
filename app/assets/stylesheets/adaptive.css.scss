@@ -49,9 +49,15 @@
       height: 15px !important;
     }
   }
-  .buy-button a{
-    font-size: 1em !important;
-    padding-bottom: 1%;
+  .buy-button {
+   height: 25px!important;
+    position: absolute;
+    a {
+      top: 7%;
+      position: relative;
+      font-size: 1em !important;
+      padding-bottom: 1%;
+    }
   }
   .buy-button,.buy-button-description{
     background-color: rgba(67, 169, 255, 0.50);
