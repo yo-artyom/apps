@@ -20,6 +20,7 @@ body.overflow-hidden {
 .container{
   height: 100%;
 }
+///////////////
 
 /****************************ВЕРХНЕЕ МЕНЮ******************************/
 .up-row{
@@ -55,18 +56,20 @@ body.overflow-hidden {
   overflow: hidden;
   margin-bottom: 3%;
   margin-top: 3%;
+  height: 60px;
 }
 .nav a {
+  height: 60px;
   display: table-cell;
   width: 50%;
   padding: 0.7% 0.7%;
   float: left;
   font-size: 2.6em;
+  padding-top: 2.5%;
   text-align: center;
   background-color: #f4faec;
   color: #2f7dbd;
   box-sizing: border-box;
-  height: 100%;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
