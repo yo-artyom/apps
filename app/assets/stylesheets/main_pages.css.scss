@@ -1,4 +1,4 @@
-$height: 2400px;//при высоте 1200
+
 * { //стили, что задаются здесь, являются общими для всех(если их не переопределить в потомке)
   outline: none;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -7,15 +7,14 @@ $height: 2400px;//при высоте 1200
   border: 0;
   font-family: "Helvetica Neue";
   font-weight: 200;
-
 }
 body {
   height: 100%;
-
 }
 body.overflow-hidden {
   /* when author bio is visible, the out-of-focus content won't scroll */
   overflow: hidden;
+
 }
 .container{
   height: 100%;
@@ -157,13 +156,13 @@ body.overflow-hidden {
   float:left;
   padding-top: 2%;
 }
-.buy-button { //кнопка покупки
+.buy-button, .buy-button-description{ //кнопка покупки
   position: relative;
   border: 1px solid rgba(67, 169, 255, 0.50);
   background-color: #007AFF;
   width: 27.5%;
   height: 20%;
-  margin-right: 5%;
+
   padding: 0.5% 2% 0% 2%;
   margin-top: 10%;
   float: right;
@@ -176,7 +175,7 @@ body.overflow-hidden {
   a{
     font-size: 2.3em;
     color: #fff;
-    padding-bottom: 2.5%;
+
 
   }
 }

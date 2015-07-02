@@ -11,11 +11,12 @@
   .nav-border {
     width: 85% !important;
     -webkit-border-radius: 8px 8px 8px 8px;
-    height: 40px;
+    height: 40px!important;
   }
+
   .nav p{
-    margin-top: 4.5%;
-    height: 40px;
+    margin-top: 2.75%;
+    height: 40px!important;
     font-size: 0.5em !important;
 
   }
@@ -48,11 +49,26 @@
       height: 15px !important;
     }
   }
-  .buy-button{
+  .buy-button a{
+    font-size: 1em !important;
+    padding-bottom: 1%;
+  }
+  .buy-button,.buy-button-description{
     background-color: rgba(67, 169, 255, 0.50);
+
+  }
+
+  .buy-button-description{
+    height: 30px!important;
+    width: 55%!important;
+  position: absolute;
+    margin-right: 22.5%!important;
+    margin-left: 22.5% !important;
     a{
-      font-size: 1em !important;
-      padding-bottom: 1%;
+      top: 10%;
+      position: relative;
+      height: 30px;
+      font-size: 1.4em!important;
     }
   }
 
@@ -72,7 +88,6 @@
     .buy-button{
       position: absolute;
       height: 2%;
-      margin: 0% 0% 0% 0%;
       width: 80px;
 
     }
