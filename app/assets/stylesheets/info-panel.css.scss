@@ -127,13 +127,14 @@
 }
 
 .info-panel-content {
-    position: absolute;
+    display: block;
     top: 0;
     left: 0;
     width: 100%;
     padding: 70px 5%;
     overflow: auto;
     text-align: center;
+    height: 100%;
     /* smooth scrolling on touch devices */
     -webkit-overflow-scrolling: touch;
     p {

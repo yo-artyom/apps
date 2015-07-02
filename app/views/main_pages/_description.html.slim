@@ -5,6 +5,6 @@
         =image_tag(item.item_image.url, size: "80x80")
         h1 =item.name
         .item-description
-          p =item.desc
+          =item.desc
         .buy-button-description
           =link_to 'Загрузить', return_link(item,detect_device)
