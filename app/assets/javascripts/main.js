@@ -23,6 +23,7 @@ ready = function() {
     $(document).on('click', '.close, .overlay ', function(event){
         event.preventDefault();
         $('body').removeClass('overflow-hidden');
+        $('html').css({'overflow':'scroll'});
         $('.info-panel-'+selected_item).removeClass('is-visible');
         $('.overlay').fadeOut(300);
         $('.close').removeClass('is-visible');
