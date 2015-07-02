@@ -12,9 +12,7 @@ body {
   height: 100%;
 }
 body.overflow-hidden {
-  /* when author bio is visible, the out-of-focus content won't scroll */
   overflow: hidden;
-
 }
 .container{
   height: 100%;
