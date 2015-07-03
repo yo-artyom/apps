@@ -9,9 +9,7 @@ ready = function() {
 
     //open
     $('#items').find('.item-info').on('click', function(event){
-        $('body').on('touchmove',function(){
-            disableScroll();
-        });
+        disableScroll();
         event.preventDefault();
         $('html').css({'overflow':'hidden'});
         selected_item = $(this).data('type');
