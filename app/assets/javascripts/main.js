@@ -9,7 +9,7 @@ ready = function() {
 
     //open
     $('#items').find('.item-info').on('click', function(event){
-        $('.body').on('touchmove', function(e){
+        $('.container').on('touchmove', function(e){
             e.preventDefault();
             e.stopPropagation();
         });
