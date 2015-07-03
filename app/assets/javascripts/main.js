@@ -9,7 +9,9 @@ ready = function() {
 
     //open
     $('#items').find('.item-info').on('click', function(event){
-
+        $('body').on('touchmove',function(){
+            disableScroll();
+        });
         event.preventDefault();
         $('html').css({'overflow':'hidden'});
         selected_item = $(this).data('type');
@@ -29,6 +31,14 @@ ready = function() {
         $('.close').removeClass('is-visible');
     });
 
+    function disableScroll() {
+        if (window.addEventListener) // older FF
+            window.addEventListener('DOMMouseScroll', preventDefault, false);
+        window.onwheel = preventDefault; // modern standard
+        window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+        window.ontouchmove  = preventDefault; // mobile
+        document.onkeydown  = preventDefaultForScrollKeys;
+    }
 };
 
 $(document).ready(ready);
