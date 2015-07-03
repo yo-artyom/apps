@@ -7,16 +7,15 @@
       li data-index = 2
         a data-index='2' href='#'
           p Приложения
-.container
-  #items
-    .wrap
-      .slider
-        .page-1.section data-index='1'
-          =render 'main_pages/grid' , items: @games
-        .page-2.section data-index='2'
-          =render 'main_pages/grid' , items: @apps
-.overlay
-.close
+#items
+  .wrap
+    .slider
+      .page-1.section data-index='1'
+        =render 'main_pages/grid' , items: @games
+      .page-2.section data-index='2'
+        =render 'main_pages/grid' , items: @apps
+  .overlay
+  .close
 
 .descriptions
   =render 'main_pages/description', item: @apps

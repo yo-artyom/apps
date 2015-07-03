@@ -78,7 +78,7 @@
     top: 0;
     overflow: auto;
     background: #dbe2e9;
-    z-index: 1;
+    z-index: 2;
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     transition-property: transform;
@@ -175,7 +175,7 @@
     background: url("close.png") no-repeat center center;
     text-indent: 100%;
     white-space: nowrap;
-    z-index: 3;
+    z-index: 2;
     display: none;
     &:hover{
       background: url("close_hover.png") no-repeat center center;
