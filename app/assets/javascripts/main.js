@@ -9,7 +9,7 @@ ready = function() {
 
     //open
     $('#items').find('.item-info').on('click', function(event){
-        $('.overlay').on('touchmove', function(e){
+        $('.info-panel-container').on('touchmove', function(e){
             e.preventDefault();
             e.stopPropagation();
         });
