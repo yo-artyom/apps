@@ -9,7 +9,7 @@ class MainPagesController < ApplicationController
   end
 
   def main
-    device = request.env['HTTP_USER_AGENT'].downcase
+    device = request.env['HTTP_USER_AGENT'].downcase.index
     if device == 'ipad'|| device == 'iphone'|| device == 'android'
       @apps =  Item.only_app.where( "#{device}_link != '' ")
       @games = Item.only_game.where("#{device}_link != '' ")

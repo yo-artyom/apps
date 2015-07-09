@@ -16,8 +16,4 @@ module MainPagesHelper
     end
   end
 
-  def check_device_link(user_device,item) #user_device = ipad, iphone, android
-
-  end
-
 end
