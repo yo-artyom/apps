@@ -9,14 +9,7 @@ ready = function() {
 
     //open
     $('#items').find('.item-info').on('click', function(event){
-        /*$('').on('touchmove', function(e){
-            e.preventDefault();
-            e.stopPropagation();
-        });*/
-        $('html, body').css({
-            'overflow': 'hidden',
-            'height': '100%'
-        });
+
         selected_item = $(this).data('type');
         $('body').addClass('overflow-hidden');
         $('.info-panel-'+selected_item).addClass('is-visible');
