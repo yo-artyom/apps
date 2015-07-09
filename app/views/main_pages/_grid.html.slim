@@ -2,13 +2,13 @@
   -items.each_slice( items.count/2 ) do |slice|
     .col
       -slice.each do |item|
-
         .apps
           .item-info data-type= "#{item.id}"
             =image_tag(item.item_image.url, class: 'item-image')
             .item-name
               h2
-                =item.name
+                -if request.env['HTTP_USER_AGENT'].downcase.match(/android|iphone|ipad/)
+                  h2 hm
               .rating
                 -for j in 1..item.rating
                   =image_tag('star.png', size: '27x27')
@@ -24,7 +24,7 @@
           =image_tag(item.item_image.url, class: 'item-image')
           .item-name
             h2
-              =item.name
+
             .rating
               -for j in 1..item.rating
                 =image_tag('star.png', size: '27x27')
