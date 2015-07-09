@@ -54,16 +54,16 @@ body.overflow-hidden {
   overflow: hidden;
   margin-bottom: 3%;
   margin-top: 3%;
-  height: 60px;
+  height: 50px;
 }
 .nav a {
-  height: 60px;
+  height: 50px;
   display: table-cell;
   width: 50%;
   padding: 0.7% 0.7%;
   float: left;
   font-size: 2.6em;
-  padding-top: 2.5%;
+
   text-align: center;
   background-color: #f4faec;
   color: #2f7dbd;
@@ -106,12 +106,16 @@ body.overflow-hidden {
 #items {   //общий блок для всего контента
   width: 100%;
   display: block;
+
 }
 
 .col{  //колонка
   width: 50%;
   float: left;
   position: relative;
+}
+.col:nth-child(odd){
+  border-left: 1px solid #007AFF;
 }
 
 .apps{ //разметка для единичного товара
@@ -122,39 +126,45 @@ body.overflow-hidden {
   border-collapse: collapse;
   border-bottom: 1px solid #007AFF;
   border-right: 1px solid #007AFF;
+
+  .item-image{  //изображение
+    width: 25%;
+    height: auto;
+    display: inline-block;
+    padding: 5% 5.5% 5% 2.5%;
+    float: left;
+    position: relative;
+  }
+  .hidden{
+    visibility: hidden;
+  }
   a{
     height: 100%;
     width: 100%;
     display: inline-block;
     float: left;
   }
-}
 
+  .item-name{ //имя товара
+    position: absolute;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    float: left;
+    width: 38%;
+    display: inline-block;
+    h2{
+      font-size: 2.3em;
+    }
+  }
 
-.item-image{  //изображение
-  width: 25%;
-  height: auto;
-  display: inline-block;
-  padding: 5% 5.5% 5% 2.5%;
-  float: left;
-  position: relative;
-}
-.item-name{ //имя товара
-  position: absolute;
-  padding-bottom: 10%;
-  padding-top: 10%;
-  float: left;
-  width: 38%;
-  display: inline-block;
-  h2{
-    font-size: 2.3em;
+  .rating{ //рэйтинг
+    display: inline-block;
+    float:left;
+    padding-top: 2%;
   }
 }
-.rating{ //рэйтинг
-  display: inline-block;
-  float:left;
-  padding-top: 2%;
-}
+
+
 .buy-button, .buy-button-description{ //кнопка покупки
   position: relative;
   border: 1px solid rgba(67, 169, 255, 0.50);

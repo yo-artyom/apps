@@ -2,6 +2,7 @@ module MainPagesHelper
   def detect_device
     request.env['HTTP_USER_AGENT'].downcase
   end
+
   def return_link(item,user_agent)
     if user_agent.index('iphone')
       item.iphone_link
@@ -14,4 +15,9 @@ module MainPagesHelper
          end
     end
   end
+
+  def check_device_link(user_device,item) #user_device = ipad, iphone, android
+
+  end
+
 end

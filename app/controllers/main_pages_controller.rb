@@ -5,14 +5,19 @@ class MainPagesController < ApplicationController
   end
 
   def game_page
-    array= []
-    array.flatten()
     @games = Item.only_game
   end
 
   def main
-    @apps =  Item.only_app
-    @games = Item.only_game
+    device = request.env['HTTP_USER_AGENT'].downcase
+    if device == ('iphone'|| 'ipad' || 'android')
+      @apps =  Item.only_app.where("#{device}_link !=''")
+      @games = Item.only_game.where("#{device}_link !=''")
+    else
+      @apps = Item.only_app
+      @games = Item.only_game
+    end
+
   end
 
   def test
