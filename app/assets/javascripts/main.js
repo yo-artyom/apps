@@ -4,9 +4,6 @@ var ready;
 ready = function() {
 
     $(".slider").HSlider(); //инициализируем слайдер
-    $('.apps:odd').css('background-color','#ffffff'); //чередуем цвет строк
-    $('.apps:even').css('background-color','#DEE5EB');
-
     //open
     $('#items').find('.item-info').on('click', function(event){
         selected_item = $(this).data('type');
@@ -15,6 +12,9 @@ ready = function() {
         $('.overlay').fadeIn(300);
         $('.close').addClass('is-visible ')
     });
+
+    $('.col .apps:odd').css('background-color','#ffffff'); //чередуем цвет строк
+    $('.col .apps:even').css('background-color','#DEE5EB');
 
     //close
     $(document).on('click', '.close, .overlay ', function(event){

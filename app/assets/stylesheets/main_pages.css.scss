@@ -55,28 +55,30 @@ body.overflow-hidden {
   overflow: hidden;
   margin-bottom: 3%;
   margin-top: 3%;
-  height: 50px;
+  height: 75px;
+  a {
+    height: 75px;
+    width: 50%;
+    padding: 0.7% 0.7%;
+    float: left;
+    font-size: 2.6em;
+    text-align: center;
+    background-color: #f4faec;
+    color: #2f7dbd;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    p{
+      position: relative;
+      top: 30%;
+    }
+  }
 }
-.nav a {
-  height: 50px;
-  display: table-cell;
-  width: 50%;
-  padding: 0.7% 0.7%;
-  float: left;
-  font-size: 2.6em;
 
-  text-align: center;
-  background-color: #f4faec;
-  color: #2f7dbd;
-  box-sizing: border-box;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
-}
 
 .nav a.active {
   background: #007aff;
@@ -115,9 +117,6 @@ body.overflow-hidden {
   float: left;
   position: relative;
 }
-.col:nth-child(odd){
-  border-left: 1px solid #007AFF;
-}
 
 .apps{ //разметка для единичного товара
   display: inline-block;
@@ -127,7 +126,6 @@ body.overflow-hidden {
   border-collapse: collapse;
   border-bottom: 1px solid #007AFF;
   border-right: 1px solid #007AFF;
-
   .item-image{  //изображение
     width: 25%;
     height: auto;
@@ -136,15 +134,7 @@ body.overflow-hidden {
     float: left;
     position: relative;
   }
-  .hidden{
-    visibility: hidden;
-  }
-  a{
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    float: left;
-  }
+
 
   .item-name{ //имя товара
     position: absolute;
@@ -161,7 +151,7 @@ body.overflow-hidden {
   .rating{ //рэйтинг
     display: inline-block;
     float:left;
-    padding-top: 2%;
+    padding-top: 5%;
   }
 }
 
@@ -170,9 +160,8 @@ body.overflow-hidden {
   position: relative;
   border: 1px solid rgba(67, 169, 255, 0.50);
   background-color: #007AFF;
-  width: 27.5%;
-  height: 20%;
-
+  width: auto;
+  height: 50px;
   padding: 0.5% 2% 0% 2%;
   margin-top: 10%;
   float: right;
@@ -185,7 +174,8 @@ body.overflow-hidden {
   a{
     font-size: 2.3em;
     color: #fff;
-
+    position: relative;
+    top: 20%;
 
   }
 }

@@ -1,7 +1,7 @@
 /* Small Devices, Tablets */
-@media only screen and (max-device-width : 640px){
+@media only screen and (max-device-width : 768px){
   * {
-    font-family: "Helvetica Neue";
+    font-family: "Helvetica Neue" ;
     font-weight: lighter;
   }
 
@@ -13,15 +13,13 @@
     -webkit-border-radius: 8px 8px 8px 8px;
     height: 40px!important;
     a{
-      top: 2%;
-      padding-top: 3.5%!important;
       height: 40px!important;
       font-size: 1.3em !important;
+      p {
+        top: 20% !important;
+      }
     }
   }
-
-
-
 
   .apps{
     border-style: solid;
@@ -35,8 +33,7 @@
     height: auto!important;
     width: 25%!important;
     display: inline-block;
-    padding: 0% 5.5% 0% 2.5%;
-
+    padding: 0 5.5% 0 2.5%;
   }
   .item-name{
     h2{
@@ -53,10 +50,8 @@
    height: 25px!important;
     position: absolute;
     a {
-      top: 7%;
-      position: relative;
       font-size: 1em !important;
-      padding-bottom: 5%;
+      top: 1%!important;
     }
   }
   .buy-button,.buy-button-description{
@@ -100,22 +95,25 @@
   }
 }
 
-@media only screen and (max-device-width : 768px) {
+@media only screen and (min-device-width : 669px) {
+  .nav-border{
+    width: 80% !important;
+    p{
+      font-size: 1.4em;
+    }
+
+  }
   .buy-button{
     background-color: rgba(67, 169, 255, 0.50);
     a{
-      font-size: 1em !important;
-      padding-bottom: 1%;
+      font-size: 1.8em !important;
+      top: 24% !important
     }
   }
 
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-device-width : 1200px) {
-  .col {
-    width: 50%;
-  }
-
 }
 
 
