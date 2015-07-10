@@ -133,26 +133,28 @@ body.overflow-hidden {
     padding: 5% 5.5% 5% 2.5%;
     float: left;
     position: relative;
+
   }
 
 
   .item-name{ //имя товара
     position: absolute;
     padding-bottom: 10%;
-    padding-top: 10%;
+    padding-top: 8%;
     float: left;
+    line-height: 0.8;
     width: 38%;
     display: inline-block;
     h2{
       font-size: 2.3em;
     }
+    .rating{ //рейтинг
+      padding-top: 10%;
+      height: 100%;
+    }
   }
 
-  .rating{ //рэйтинг
-    display: inline-block;
-    float:left;
-    padding-top: 5%;
-  }
+
 }
 
 
@@ -162,7 +164,7 @@ body.overflow-hidden {
   background-color: #007AFF;
   width: auto;
   height: 50px;
-  padding: 0.5% 2% 0% 2%;
+  padding: 0.5% 2% 0 2%;
   margin-top: 10%;
   float: right;
   text-align: center;
