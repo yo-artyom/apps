@@ -14,7 +14,7 @@ html{
   height: 100%;
 }
 body.overflow-hidden {
- // overflow: hidden;
+ overflow: hidden;
 }
 .container{
   height: 100%;
@@ -24,7 +24,6 @@ body.overflow-hidden {
 /****************************ВЕРХНЕЕ МЕНЮ******************************/
 .up-row{
   z-index: 1;
-
   text-align: center;
   border-bottom: 1px solid;
   -moz-border-image: url(/uploads/item/item_image/grad/1.png) 29 stretch;
@@ -72,6 +71,9 @@ body.overflow-hidden {
     -ms-user-select: none;
     user-select: none;
     cursor: default;
+    -webkit-transition: background 0.15s 0.15s;
+    -moz-transition: background 0.15s 0.15s;
+    transition: background 0.15s 0.15s;
     p{
       position: relative;
       top: 30%;
@@ -126,53 +128,57 @@ body.overflow-hidden {
   border-collapse: collapse;
   border-bottom: 1px solid #007AFF;
   border-right: 1px solid #007AFF;
-  .item-image{  //изображение
+
+
+  .item-image {
+    //изображение
     width: 25%;
     height: auto;
     display: inline-block;
     padding: 5% 5.5% 5% 2.5%;
     float: left;
     position: relative;
-
   }
-
-
   .item-name{ //имя товара
     position: absolute;
     padding-bottom: 10%;
-    padding-top: 8%;
+    padding-top: 6%;
     float: left;
+
+
     line-height: 0.8;
     width: 38%;
     display: inline-block;
     h2{
       font-size: 2.3em;
-    }
-    .rating{ //рейтинг
-      padding-top: 10%;
-      height: 100%;
+
     }
   }
 
+  .rating{ //рейтинг
+    position: relative;
+    top: 110px;
+    height: 100%;
 
+  }
 }
 
 
 .buy-button, .buy-button-description{ //кнопка покупки
   position: relative;
+  top: 35px;
   border: 1px solid rgba(67, 169, 255, 0.50);
   background-color: #007AFF;
   width: auto;
   height: 50px;
   padding: 0.5% 2% 0 2%;
-  margin-top: 10%;
   float: right;
   text-align: center;
   border-radius: 16px 16px 16px 16px;
   -moz-border-radius: 16px 16px 16px 16px;
   -webkit-border-radius: 8px 8px 8px 8px;
   margin-right: 10%;
-  margin-left: 10%;
+  margin-left: 15%;
   a{
     font-size: 2.3em;
     color: #fff;

@@ -28,6 +28,7 @@
     -webkit-border-image: url(/uploads/item/item_image/grad/1.png) 29 stretch;
     -o-border-image: url(/uploads/item/item_image/grad/1.png) 29 stretch;
     border-image: url(/uploads/item/item_image/grad/1.png) 29 stretch;
+    padding-top: 2%; //немного увеличиваю размер ячейки
   }
   .item-image{
     height: auto!important;
@@ -36,11 +37,14 @@
     padding: 0 5.5% 0 2.5%;
   }
   .item-name{
+    top:0;
+    line-height: 1!important;
     h2{
       font-size: 1.2em !important;
     }
   }
   .rating{
+    top:55px!important;
     img{
       width: 15px !important;
       height: 15px !important;
@@ -49,6 +53,7 @@
   .buy-button {
    height: 25px!important;
     position: absolute;
+    top:10px!important;
     a {
       font-size: 1em !important;
       top: 1%!important;
@@ -94,8 +99,8 @@
     }
   }
 }
-
-@media only screen and (min-device-width : 669px) {
+/*планшеты в горизонтальном положении*/
+@media only screen and (min-device-width : 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .nav-border{
     width: 80% !important;
     p{
@@ -103,15 +108,71 @@
     }
 
   }
-  .buy-button{
-    background-color: rgba(67, 169, 255, 0.50);
-    a{
-      font-size: 1.8em !important;
-      top: 24% !important
+  .apps{
+    padding-top: 2%;
+  }
+  .item-name{
+    top: -1px;
+    h2{
+      line-height: 0.9;
+      font-size: 2em!important;
     }
   }
-
+  .rating{
+    top: 85px!important;
+  }
+  .buy-button{
+    top: 5px!important;
+    background-color: rgba(67, 169, 255, 0.50);
+    margin-top: 0!important;
+    a{
+      font-size: 1.8em !important;
+      top: 25% !important
+    }
+  }
 }
+/*планшеты в вертикальном положении*/
+@media only screen and (min-device-width : 768px) and (max-device-width: 1024px) and (orientation: portrait){
+  .nav-border{
+    width: 80% !important;
+    height: 75px!important;
+    a{
+      height: 75px!important;
+      p{
+        top: 20px!important;
+        font-size: 2.4em;
+      }
+    }
+  }
+  .apps{
+    padding-top: 2%;
+  }
+  .item-name{
+    h2{
+      line-height: 0.9;
+      font-size: 3em!important;
+    }
+  }
+  .rating{
+    img {
+      width: 30px!important;
+      height: 30px!important;
+    }
+    top: 128px!important;
+  }
+  .buy-button{
+    top: 25px!important;
+    height: 60px!important;
+    background-color: rgba(67, 169, 255, 0.50);
+    margin-top: 0!important;
+    a{
+      font-size: 2.8em !important;
+      top: 25% !important
+    }
+  }
+}
+
+
 /* Large Devices, Wide Screens */
 @media only screen and (min-device-width : 1200px) {
 }
