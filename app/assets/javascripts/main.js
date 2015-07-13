@@ -13,8 +13,8 @@ ready = function() {
         $('.close').addClass('is-visible ')
     });
 
-    $('.col .apps:odd').css('background-color','#ffffff'); //чередуем цвет строк
-    $('.col .apps:even').css('background-color','#DEDEDE');
+
+
 
     //close
     $(document).on('click', '.close, .overlay ', function(event){
