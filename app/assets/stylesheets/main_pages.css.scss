@@ -11,7 +11,7 @@
 }
 
 html{
-  height: 100%;
+  height: 1000px;
 }
 body.overflow-hidden {
  overflow: hidden;
@@ -99,23 +99,21 @@ body.overflow-hidden {
   height: 100%;
 }
 .page-1{
-  left: 0%;
+  left: 0;
 }
 .page-2{
   left: 100%;
 }
 .wrap{
   width: 100%;
-  height:100%;
-  overflow: hidden;
+  height: inherit;
   position: absolute;
   -webkit-transform-style: preserve-3d;
 }
 /***************** ОСНОВНОЙ КОНТЕНТ СТРАНИЦЫ ****************************/
 #items {   //общий блок для всего контента
   width: 100%;
-  display: block;
-
+  height: inherit;
 }
 
 .col{  //колонка
