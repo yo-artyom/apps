@@ -2,14 +2,13 @@ var ready;
 
 
 ready = function() {
-
     $(".slider").HSlider(); //инициализируем слайдер
     //open
     $('#items').find('.item-info').on('click', function(event){
         selected_item = $(this).data('type');
         $('body').addClass('overflow-hidden');
         $('.info-panel-'+selected_item).addClass('is-visible');
-        $('.overlay').fadeIn(300);
+        $('.overlay').fadeIn(400);
         $('.close').addClass('is-visible ')
     });
 

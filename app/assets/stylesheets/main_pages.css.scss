@@ -74,6 +74,10 @@ body.overflow-hidden {
     -webkit-transition: background 0.15s 0.15s;
     -moz-transition: background 0.15s 0.15s;
     transition: background 0.15s 0.15s;
+    &:hover{
+      background: rgba(159,222,255,0.2);
+
+    }
     p{
       position: relative;
       top: 30%;

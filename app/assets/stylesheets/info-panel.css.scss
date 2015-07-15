@@ -5,9 +5,9 @@
     height: 150vh!important;
     width: 100%;
     visibility: hidden;
-    -webkit-transition: visibility 0s 0.3s;
-    -moz-transition: visibility 0s 0.3s;
-    transition: visibility 0s 0.3s;
+    -webkit-transition: visibility 0s 0.4s;
+    -moz-transition: visibility 0s 0.4s;
+    transition: visibility 0s 0.4s;
 }
 .info-panel::after {
     /* overlay layer */
@@ -18,9 +18,9 @@
     height: 100%;
     background: transparent;
     cursor: pointer;
-    -webkit-transition: background 0.3s 0.3s;
-    -moz-transition: background 0.3s 0.3s;
-    transition: background 0.3s 0.3s;
+    -webkit-transition: background 0.4s 0.4s;
+    -moz-transition: background 0.4s 0.4s;
+    transition: background 0.4s 0.4s;
 }
 .info-panel.is-visible {
     visibility: visible;
@@ -35,9 +35,9 @@
     background: rgba(255, 255, 255, 0.96);
     z-index: 2;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
-    -webkit-transition: top 0.3s 0s;
-    -moz-transition: top 0.3s 0s;
-    transition: top 0.3s 0s;
+    -webkit-transition: top 0.4s 0s;
+    -moz-transition: top 0.4s 0s;
+    transition: top 0.4s 0s;
 }
 
 .info-panel-header h1 {
@@ -56,9 +56,9 @@
 }
 .is-visible .info-panel-header {
     top: 0;
-    -webkit-transition: top 0.3s 0.3s;
-    -moz-transition: top 0.3s 0.3s;
-    transition: top 0.3s 0.3s;
+    -webkit-transition: top 0.4s 0.4s;
+    -moz-transition: top 0.4s 0.4s;
+    transition: top 0.4s 0.4s;
 }
 @media only screen and (min-width: 768px) {
     .info-panel-header {
@@ -82,9 +82,9 @@
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     -webkit-transition-delay: 0s;
     -moz-transition-delay: 0s;
     transition-delay: 0s;

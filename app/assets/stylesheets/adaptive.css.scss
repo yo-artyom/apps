@@ -7,6 +7,9 @@
 
   .col{
     width: 100% !important;
+    &:nth-child(odd) {
+      background-color: #DEDEDE;
+    }
   }
   .nav-border {
     width: 85% !important;
@@ -30,9 +33,7 @@
     border-image: url(/uploads/item/item_image/grad/1.png) 29 stretch;
     padding-top: 2%; //немного увеличиваю размер ячейки
   }
-  .col:nth-child(odd) {
-    background-color: #DEDEDE;
-  }
+
     .item-image{
     height: auto!important;
     width: 25%!important;
