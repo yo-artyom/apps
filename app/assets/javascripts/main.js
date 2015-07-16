@@ -15,8 +15,8 @@ ready = function() {
         $('.close').addClass('is-visible ')
     });
 
-
-
+    $('.nav-border').on('click', function(){
+    });
 
     //close
     $(document).on('click', '.close, .overlay ', function(event){

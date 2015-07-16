@@ -5,12 +5,7 @@
     font-weight: lighter;
   }
 
-  .col{
-    width: 100% !important;
-    &:nth-child(odd) {
-     // background-color: #DEDEDE;
-    }
-  }
+
   .nav-border {
     width: 85% !important;
     -webkit-border-radius: 8px 8px 8px 8px;
@@ -22,6 +17,10 @@
         top: 20% !important;
       }
     }
+  }
+
+  .col{
+    width: 100% !important;
   }
 
   .apps {
