@@ -9,10 +9,11 @@ ready = function() {
     //open
     $('#items').find('.item-info').on('click', function(event){
         selected_item = $(this).data('type');
-        $('body').addClass('overflow-hidden');
+        $('html , body').css({'overflow':'hidden'});
+        //$('body').addClass('overflow-hidden');
         $('.info-panel-'+selected_item).addClass('is-visible');
         $('.overlay').fadeIn(400);
-        $('.close').addClass('is-visible ')
+        $('.close').addClass('is-visible ');
     });
 
     $('.nav-border').on('click', function(){

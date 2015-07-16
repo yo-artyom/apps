@@ -162,7 +162,7 @@
     height: 200%;
     background: rgba(47, 125, 189, 0.80);
     cursor: pointer;
-    z-index: 0;
+    z-index: 1;
     display: none;
 }
 
@@ -175,7 +175,7 @@
     background: url("close.png") no-repeat center center;
     text-indent: 100%;
     white-space: nowrap;
-    z-index: 2;
+    z-index: 3;
     display: none;
     &:hover{
       background: url("close_hover.png") no-repeat center center;

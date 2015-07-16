@@ -11,9 +11,10 @@
 }
 
 html{
-//  height: auto;
+ height: auto;
 }
 body{
+  z-index: 1;
   //height: 100%;
 }
 body.overflow-hidden {
@@ -24,6 +25,7 @@ body.overflow-hidden {
 
 /****************************ВЕРХНЕЕ МЕНЮ******************************/
 .up-row{
+  z-index: 1;
   text-align: center;
   border-bottom: 1px solid;
   -moz-border-image: url(/uploads/item/item_image/grad/1.png) 29 stretch;
@@ -116,7 +118,12 @@ body.overflow-hidden {
 }
 
 /***************** ОСНОВНОЙ КОНТЕНТ СТРАНИЦЫ ****************************/
+#items {   //общий блок для всего контента
 
+  width: 100%;
+  height: auto;
+
+}
 
 .col{  //колонка
   width: 50%;
