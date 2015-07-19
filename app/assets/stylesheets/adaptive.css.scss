@@ -19,10 +19,12 @@
     }
   }
 
-  .col{
+  .col {
     width: 100% !important;
+    &:nth-child(odd) {
+      background-color: #DEE5EB;
+    }
   }
-
   .apps {
     border-style: solid;
     border-width: 1px;

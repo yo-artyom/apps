@@ -1,33 +1,15 @@
--if ( items.count >= 2)
-  -items.each_slice( (items.count/2).to_i ) do |slice|
-    .col
-      -slice.each do |item|
-        .apps
-          .item-info data-type= "#{item.id}"
-            =image_tag(item.item_image.url, class: 'item-image')
-            .item-name
-              h2
-                =item.name
-            .rating
-              -for j in 1..item.rating
-                =image_tag('Star-Full.png', size: '27x27')
-              -for j in 0..(4-item.rating)
-                =image_tag('empty_star.png', size: '27x27')
-          .buy-button
-            =link_to 'Загрузить', return_link(item,detect_device)
--else(items.count == 1)
-  -items.each do |item|
-    .col
-      .apps
-        .item-info data-type= "#{item.id}"
-          =image_tag(item.item_image.url, class: 'item-image')
-          .item-name
-            h2
-
-            .rating
-              -for j in 1..item.rating
-                =image_tag('star.png', size: '27x27')
-              -for j in 0..(4-item.rating)
-                =image_tag('stars_empty.png', size: '27x27')
-        .buy-button
-          =link_to 'Загрузить', return_link(item,detect_device)
+-items.each do |item|
+  .col
+    .apps
+      .item-info data-type= "#{item.id}"
+        =image_tag(item.item_image.url, class: 'item-image')
+        .item-name
+          h2
+            =item.name
+        .rating
+          -for j in 1..item.rating
+            =image_tag('Star-Full.png', size: '27x27')
+          -for j in 0..(4-item.rating)
+            =image_tag('empty_star.png', size: '27x27')
+      .buy-button
+        =link_to 'Загрузить', return_link(item,detect_device)

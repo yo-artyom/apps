@@ -4,7 +4,7 @@ var ready;
 ready = function() {
     $(".slider").HSlider(); //инициализируем слайдер
 
-    $('.col .apps:even').css('background-color','#DEE5EB');
+    // $('.col .apps:even').css('background-color','#DEE5EB');
 
     //open
     $('#items').find('.item-info').on('click', function(event){
