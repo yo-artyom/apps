@@ -1,0 +1,14 @@
+
+#items
+  .wrap
+    .slider
+      .page-1.section data-index='1'
+        =render 'main_pages/grid' , items: @games
+      .page-2.section data-index='2'
+        =render 'main_pages/grid' , items: @apps
+  .overlay
+  .close
+
+.descriptions
+  =render 'main_pages/description', item: @apps
+  =render 'main_pages/description', item: @games

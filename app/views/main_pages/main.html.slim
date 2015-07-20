@@ -8,13 +8,12 @@
         a data-index='2' href='#'
           p Приложения
 
-#items
-  .wrap
-    .slider
-      .page-1.section data-index='1'
-        =render 'main_pages/grid' , items: @games
-      .page-2.section data-index='2'
-        =render 'main_pages/grid' , items: @apps
+.items
+  .slider
+    .page-1.section data-index='1'
+      =render 'main_pages/grid' , items: @games
+    .page-2.section data-index='2'
+      =render 'main_pages/grid' , items: @apps
   .overlay
   .close
 
