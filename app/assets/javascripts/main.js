@@ -18,6 +18,7 @@ ready = function() {
     //close
     $(document).on('click', '.close, .overlay ', function(event){
         event.preventDefault();
+        alert('ededed');
         $('html').css({'overflow':'scroll'});
         $('.info-panel-'+selected_item).removeClass('is-visible');
         $('.overlay').fadeOut(400);
