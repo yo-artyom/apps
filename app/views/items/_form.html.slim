@@ -14,11 +14,12 @@
       h2  Название
     br
     = f.text_field :name, class: 'write'
-  .icon
-    label
-      h2 Описание
-    br
-    = f.text_area :desc, class: 'write'
+  br
+  label
+    h2 Описание
+  br
+  = f.cktext_area :desc, class: 'CKK', :ckeditor => {:language => 'ru'},:ckeditor => {:uiColor => '#2c97de'}
+
   .icon
     label
       h2  Картинка
