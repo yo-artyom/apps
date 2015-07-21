@@ -7,7 +7,7 @@ ready = function() {
     // $('.col .apps:even').css('background-color','#DEE5EB');
 
     //open
-    $('.items').find('.item-info').on('click', function(event){
+    $('.items').find('.item-info').on('click', function(){
         selected_item = $(this).data('type');
         $('html , body').css({'overflow':'hidden'});
         $('.info-panel-'+selected_item).addClass('is-visible');
@@ -16,9 +16,7 @@ ready = function() {
     });
 
     //close
-    $(document).on('click', '.close, .overlay ', function(event){
-        event.preventDefault();
-        alert('ededed');
+    $(document).on('click', '.close', function(){
         $('html').css({'overflow':'scroll'});
         $('.info-panel-'+selected_item).removeClass('is-visible');
         $('.overlay').fadeOut(400);
