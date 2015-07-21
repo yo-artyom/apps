@@ -166,17 +166,11 @@
 }
 
 .close{
-    width: 32px;
-    height: 32px;
-    position: fixed;
+  position: fixed;
     top: 10px;
-
-    background: url("closee.png") no-repeat center center;
+    right: 10px;
     z-index: 5;
     display: none;
-    &:hover{
-      background: url("close_hover.png") no-repeat center center;
-    }
 }
 .close.is-visible {
     display: block;
