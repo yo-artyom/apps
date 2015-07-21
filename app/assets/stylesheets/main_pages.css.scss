@@ -1,4 +1,5 @@
 
+
   * { //стили, что задаются здесь, являются общими для всех(если их не переопределить в потомке)
   outline: none;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -6,7 +7,8 @@
   margin: 0;
   border: 0;
   height: auto;
-  font-family: "Helvetica Neue";
+
+  //font-family: "Helvetica Neue";
   font-weight: 200;
 }
 
@@ -21,6 +23,7 @@ html{
 
 ///////////////
 
+
 /****************************ВЕРХНЕЕ МЕНЮ******************************/
 .up-row{
   z-index: 1;
@@ -32,7 +35,6 @@ html{
   border-image: url(/uploads/item/item_image/grad/1.png) 29 stretch;
   width: 100%;
   display: inline-block;
-
 }
 .nav {
   display: inline-block;
@@ -91,9 +93,7 @@ html{
 }
 
 /**************************** СЛАЙДЕР ********************************/
-.wrap{ //основной блок страницы
 
-}
 
 .section{
   position: absolute;
