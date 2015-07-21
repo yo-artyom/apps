@@ -16,7 +16,7 @@ ready = function() {
     });
 
     //close
-    $(document).on('click', '.close', function(){
+    $(document).on('click', '.close, .overlay', function(){
         $('html').css({'overflow':'scroll'});
         $('.info-panel-'+selected_item).removeClass('is-visible');
         $('.overlay').fadeOut(400);
