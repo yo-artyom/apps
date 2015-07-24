@@ -8,6 +8,7 @@ ready = function() {
 
     //open
     $('.items').find('.item-info').on('click', function(){
+
         selected_item = $(this).data('type');
         $('html , body').css({'overflow':'hidden'});
         $('.info-panel-'+selected_item).addClass('is-visible');
