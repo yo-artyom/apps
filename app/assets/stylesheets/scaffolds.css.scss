@@ -6,7 +6,26 @@ body {
   line-height: 18px;
 }
 
-
+input[type="submit"] {
+  /* button style */
+  border: none;
+  background: #2c97de;
+  border-radius: .25em;
+  margin-right: 1%;
+  padding: 16px 20px;
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
 pre {
   background-color: #eee;
   padding: 10px;
@@ -21,8 +40,7 @@ div {
 }
 
 #notice {
-  color: #0e805c;
-  height: 3%;
+  color: #0D372A;
   padding-top: 1.5%;
 }
 

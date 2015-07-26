@@ -17,18 +17,6 @@ html * {
     -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-    font-size: 1.6rem;
-    font-family: "Open Sans", sans-serif;
-    color: #173d50;
-    background-color: #173d50;
-}
-
-a {
-    color: #e97d68;
-    text-decoration: none;
-}
-
 /* --------------------------------
 Main Components
 -------------------------------- */
@@ -38,8 +26,9 @@ Main Components
     position: relative;
 }
 .cd-header h1 {
+    font-family: "Open Sans", sans-serif;
     text-align: center;
-    color: #FFFFFF;
+    color: #2b3e51;
     font-size: 2.2rem;
 }
 @media only screen and (min-width: 768px) {
@@ -846,12 +835,14 @@ Form
     color: #2b3e51;
 }
 .cd-form input[type="text"],
+.cd-form input[type="password"],
 .cd-form input[type="email"],
 .cd-form textarea,
 .cd-form select,
 .cd-form legend {
     display: block;
     width: 100%;
+
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -860,6 +851,7 @@ Form
 }
 .cd-form input[type="text"],
 .cd-form input[type="email"],
+.cd-form input[type="password"],
 .cd-form textarea,
 .cd-form select {
     /* general style for input elements */
@@ -871,6 +863,7 @@ Form
 }
 .cd-form input[type="text"]:focus,
 .cd-form input[type="email"]:focus,
+.cd-form input[type="password"]:focus,
 .cd-form textarea:focus,
 .cd-form select:focus {
     outline: none;

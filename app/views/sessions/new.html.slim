@@ -1,0 +1,13 @@
+
+-if flash[:alert]
+  p id='notice'
+    =flash[:alert]
+.container-with-background
+  =form_tag({}, class: 'form-1')
+    p class='field'
+      =text_field_tag :name, params[:name], placeholder: 'Имя пользователя'
+
+    p class='field'
+      =password_field_tag :password,params[:password], placeholder: 'Пароль'
+
+    =submit_tag 'Войти'

@@ -1,0 +1,151 @@
+.container-with-background{
+  min-height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to bottom, #2b3e51, #0782C1);
+}
+.form-1 {
+  /* Size and position */
+  width: 450px;
+  margin: auto;
+
+  padding-top: 15%;
+  position: relative;
+  /* Font styles */
+  font-family: 'Raleway', 'Lato', Arial, sans-serif;
+  color: white;
+  text-shadow: 0 2px 1px rgba(0,0,0,0.3);
+}
+
+.form-1 h1 {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+.form-1 input[type=text],
+.form-1 input[type=password] {
+  /* Size and position */
+  width: 100%;
+  padding: 8px 4px 8px 10px;
+  margin-bottom: 15px;
+
+  /* Styles */
+  border: 1px solid #4e3043; /* Fallback */
+  border: 1px solid rgba(78,48,67, 0.8);
+  background: rgba(250, 217, 255, 0.35);
+  border-radius: 2px;
+  box-shadow:
+  0 1px 0 rgba(255,255,255,0.2),
+  inset 0 1px 1px rgba(0,0,0,0.1);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+  /* Font styles */
+  font-family: 'Raleway', 'Lato', Arial, sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Placeholder style (from http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css) */
+
+.form-1 input::-webkit-input-placeholder {
+  color: rgba(37,21,26,0.5);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.form-1 input:-moz-placeholder {
+  color: rgba(37,21,26,0.5);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.form-1 input:-ms-input-placeholder {
+  color: rgba(37,21,26,0.5);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.form-1 input[type=text]:hover,
+.form-1 input[type=password]:hover {
+  border-color: #333;
+}
+
+.form-1 input[type=text]:focus,
+.form-1 input[type=password]:focus,
+.form-1 input[type=submit]:focus {
+  box-shadow:
+  0 1px 0 rgba(255, 101, 224, 0.20),
+  inset 0 1px 1px rgba(0,0,0,0.1),
+  0 0 0 3px rgba(255,255,255,0.15);
+  outline: none;
+}
+
+/* Fallback */
+.no-boxshadow .form-1 input[type=text]:focus,
+.no-boxshadow .form-1 input[type=password]:focus {
+  outline: 1px solid white;
+}
+
+.form-1 input[type=submit] {
+  /* Size and position */
+  width: 100%;
+  padding: 8px 5px;
+
+  /* Styles */
+  background: #634056;
+  background: -moz-linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));
+  background: -ms-linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));
+  background: -o-linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(99,64,86,0.5)), to(rgba(76,49,65,0.7)));
+  background: -webkit-linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));
+  background: linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));
+  border-radius: 5px;
+  border: 1px solid #4e3043;
+  box-shadow: inset 0 1px rgba(255,255,255,0.4), 0 2px 1px rgba(0,0,0,0.1);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+  /* Font styles */
+  color: white;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Raleway', 'Lato', Arial, sans-serif;
+}
+
+.form-1 input[type=submit]:hover {
+  box-shadow:
+  inset 0 1px rgba(255,255,255,0.2),
+  inset 0 20px 30px rgba(99,64,86,0.5);
+}
+
+/* Fallback */
+.no-boxshadow .form-1 input[type=submit]:hover {
+  background: #594642;
+}
+
+.form-1 label {
+  display: none;
+  padding: 0 0 5px 2px;
+  cursor: pointer;
+}
+
+.form-1 label:hover ~ input {
+  border-color: #333;
+}
+
+.no-placeholder .form-1 label {
+  display: block;
+}
+
+@media only screen and (max-device-width : 768px) {
+  .form-1{
+    width: 270px;
+  }
+}

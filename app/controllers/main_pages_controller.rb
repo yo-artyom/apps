@@ -1,5 +1,6 @@
 class MainPagesController < ApplicationController
   include Detect
+  skip_before_action :authorize
 
   def app_page
     @apps =  Item.only_app

@@ -1,0 +1,28 @@
+= form_for(@user, :html => {:class => "cd-form floating-labels"}) do |f|
+  -if @user.errors.any?
+    div class="error-message"
+      h2
+        = pluralize(@user.errors.count, "error")
+      ul
+        =@user.errors.full_messages.each do |message|
+          li
+            = message
+
+  .icon
+    = f.label 'Имя'
+    br
+    = f.text_field :name
+
+  .icon
+    = f.label 'Пароль'
+    br
+    = f.password_field :password
+
+  .icon
+    =f.label :password_confirmation, "Подтверждение"
+    br
+    =f.password_field :password_confirmation
+
+  .actions
+    = f.submit  'Готово'
+    = button_to 'Назад', users_path, class:'back', :method => :get

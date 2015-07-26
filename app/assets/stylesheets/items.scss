@@ -1,10 +1,7 @@
-.items-container{
-  background-color: #0f133f;
-  height: 2000px;
-}
+
 
 .table-form {
-  margin:0px;padding:0px;
+  margin:0;padding:0;
   width:100%;
   box-shadow: 10px 10px 5px #888888;
   border:1px solid #2c97de;
@@ -73,7 +70,9 @@
 .table-form tr:first-child td:last-child{
   border-width:0px 0px 1px 1px;
 }
-
+.item-content{
+  background-color: #0f133f;
+}
 .item-new {
   width: 100%;
   text-align: center;
@@ -82,7 +81,6 @@
   padding-bottom: 2.5%;
   overflow: auto;
   color: #b1d6e8;
-  background-color: #0f133f;
   a {
     color: #b1d6e8;
     background-color: #185478;
@@ -101,12 +99,14 @@
 }
 
 #notice{
+  height: 60px;
   text-align: center;
   background-color: #24b379;
   color: #d3fffd;
+  line-height: 1;
   font-size: 2.5em;
   border-bottom: 1px solid #42a2e1;
-  h1{text-shadow: #adff8f 1px 0px, #adff8f 1px 1px, #adff8f 0px 1px, #adff8f -1px 1px, #adff8f -1px 0px, red -1px -1px, red 0px -1px, red 1px -1px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px;}
+  h1{text-shadow: #ffa3a3 1px 0px, #ffa3a3 1px 1px, #ffa3a3 0px 1px, #ffa3a3 -1px 1px, #ffa3a3 -1px 0px, red -1px -1px, red 0px -1px, red 1px -1px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px;}
 }
 
 #item_item_image{

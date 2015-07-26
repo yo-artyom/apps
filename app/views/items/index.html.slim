@@ -1,31 +1,34 @@
-.items-container
-  p id="notice"
-    =notice
+-if flash[:notice]
+  .items-container
+    p id="notice"
+      =notice
+
+.item-content
+  =button_to 'выйти', logout_url, method: :delete, class: 'back'
   .item-new
     =link_to 'Новое приложение$', new_item_path
 
+.table-form
+  table
+    tr
+      td Название
+      td Тип приложения
+      td Рейтинг
+      td Пикча
+      td
+      td
 
-  .table-form
-    table
+    -@items.each do |item|
       tr
-        td Название
-        td Тип приложения
-        td Рейтинг
-        td Пикча
-        td
-        td
-
-      -@items.each do |item|
-        tr
-          td =item.name
-          td =item.app_type
-          td =item.rating
-          td = image_tag(item.item_image.url, size: "80x80")
-          td =link_to 'Редактировать', edit_item_path(item)
-          td =link_to 'Удалить', item, :method =>  :delete, data: { confirm: 'Точно удалить?' }
+        td =item.name
+        td =item.app_type
+        td =item.rating
+        td = image_tag(item.item_image.url, size: "80x80")
+        td =link_to 'Редактировать', edit_item_path(item)
+        td =link_to 'Удалить', item, :method =>  :delete, data: { confirm: 'Точно удалить?' }
 
 
-  .footer-items
-    h2 Разработка Артём Зафрански
+.footer-items
+  h2 Разработка Артём Зафрански
 
 

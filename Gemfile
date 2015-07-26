@@ -33,9 +33,10 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'ckeditor'
 gem 'paperclip'
+gem 'bcrypt'
 
 group :development do
   gem 'capistrano', '~>2.15.5'
 end
-gem 'turbo-sprockets-rails3', group: :assets
+
 gem 'unicorn', group: :production
