@@ -31,7 +31,7 @@ gem 'spring',        group: :development
 
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'ckeditor'
+#gem 'ckeditor'
 gem 'paperclip'
 gem 'bcrypt'
 
