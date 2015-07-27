@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   end
 
 
-  mount Ckeditor::Engine => '/ckeditor'
+  #mount Ckeditor::Engine => '/ckeditor'
 
 
   get 'admin/index'
