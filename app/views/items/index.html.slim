@@ -2,32 +2,25 @@
   .items-container
     p id="notice"
       =notice
-
 .item-content
-  /=button_to 'выйти', logout_url, method: :delete, class: 'back'
   .item-new
-    =link_to 'Новое приложение$', new_item_path
+    =link_to 'Новое приложение', new_item_path
 
-
-.table-form
-  table
-    tr
-      td Название
-      td Тип приложения
-      td Рейтинг
-      td Пикча
-      td
-      td
-
-    -@items.each do |item|
-      tr
-        td =item.name
-        td =item.app_type
-        td =item.rating
-        td = image_tag(item.item_image.url, size: "80x80")
-        td =link_to 'Редактировать', edit_item_path(item)
-        td =link_to 'Удалить', item, :method =>  :delete, data: { confirm: 'Точно удалить?' }
-
+.up-row
+  ul class='nav pagination'
+    .nav-border.in-items
+      li data-index = 1 class='active'
+        a data-index='1' href='#'
+          p Игры
+      li data-index = 2
+        a data-index='2' href='#'
+          p Приложения
+.items.background-color
+  .slider
+    .page-1.section data-index='1'
+      =render 'items/table' , items: @games
+    .page-2.section data-index='2'
+      =render 'items/table' , items: @apps
 
 .footer-items
   h2 Разработка Артём Зафрански

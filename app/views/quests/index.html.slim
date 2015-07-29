@@ -1,25 +1,26 @@
-.item-new
-  = link_to 'Новое задание', new_quest_path
-.table-form
-  table
-    tr
-      td Имя
-      td Статус
-      td Кто выполняет
-      td Описание
-      td
-      td
-
-    - @quests.each do |quest|
+.background-color
+  .item-new
+    = link_to 'Новое задание', new_quest_path
+  .table-form
+    table
       tr
-        td = quest.name
-        td class="#{status_css(quest.status)}"
-          = quest.status
-        td = quest.worker
-        td = quest.description
-        td = link_to 'Редактировать', edit_quest_path(quest)
-        td = link_to 'Удалить', quest, data: {:confirm => 'Уверен?'}, :method => :delete
+        td Имя
+        td Статус
+        td Кто выполняет
+        td Описание
+        td
+        td
 
-  br
+      - @quests.each do |quest|
+        tr
+          td = quest.name
+          td class="#{status_css(quest.status)}"
+            = quest.status
+          td = quest.worker
+          td = quest.description
+          td = link_to 'Редактировать', edit_quest_path(quest)
+          td = link_to 'Удалить', quest, data: {:confirm => 'Уверен?'}, :method => :delete
+
+    br
 
 
