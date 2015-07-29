@@ -23,8 +23,7 @@ class MainPagesController < ApplicationController
   end
 
   def test
-    @apps =  Item.only_app
-    @games = Item.only_game
+   @items = Item.all
   end
 
 end

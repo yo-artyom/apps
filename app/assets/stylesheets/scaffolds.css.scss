@@ -39,10 +39,7 @@ div {
   }
 }
 
-#notice {
-  color: #0D372A;
-  padding-top: 1.5%;
-}
+
 
 .field_with_errors {
   padding: 2px;
@@ -71,4 +68,21 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+#notice{
+  height: 60px;
+  text-align: center;
+  background-color: #24b379;
+  color: #d3fffd;
+  line-height: 0.6;
+  font-size: 2.5em;
+  border-bottom: 1px solid #42a2e1;
+  h1{text-shadow: #ffa3a3 1px 0px, #ffa3a3 1px 1px, #ffa3a3 0px 1px, #ffa3a3 -1px 1px, #ffa3a3 -1px 0px, red -1px -1px, red 0px -1px, red 1px -1px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px;}
+}
+@media only screen and (max-device-width : 768px){
+  #notice {
+    line-height: 2;
+    font-size: 1.5em;
+  }
+
 }
