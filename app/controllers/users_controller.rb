@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
+
   # GET /users
   # GET /users.json
   def index
@@ -61,7 +62,11 @@ class UsersController < ApplicationController
     end
   end
 
+
   private
+    def create_remember_token
+      self.remember_token = User.encrypt(User.new_remember_token)
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
