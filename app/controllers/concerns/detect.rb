@@ -6,7 +6,7 @@ module Detect
     elsif user_agent.index('iphone')
       'iphone'
     elsif user_agent.index('android')
-      'chrome'
+      'android'
     else
       'unknown'
     end
