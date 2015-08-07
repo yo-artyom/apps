@@ -11,5 +11,5 @@
             =image_tag('Star-Full.png', size: '27x27')
           -for j in 0..(4-item.rating)
             =image_tag('empty_star.png', size: '27x27')
-      .buy-button
+      /.buy-button
         =link_to 'Загрузить', return_link(item,detect_device), target: '_blank'
