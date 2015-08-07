@@ -32,7 +32,7 @@ html{
 .up-row{
   z-index: 1;
   text-align: center;
-  border-bottom: 2px solid;
+  border-bottom: 3px solid;
   -moz-border-image: url(/uploads/item/item_image/grad/1.png) 29 stretch;
   -webkit-border-image: url(/uploads/item/item_image/grad/1.png) 29 stretch;
   -o-border-image: url(/uploads/item/item_image/grad/1.png) 29 stretch;
@@ -124,7 +124,7 @@ html{
   width: 50%;
   float: left;
   &:nth-child(odd){
-    border-left: 2px solid #007AFF;
+    border-left: 3px solid #007AFF;
   }
 }
 
@@ -136,8 +136,8 @@ html{
   max-height: 174px;
   float: right;
   border-collapse: collapse;
-  border-bottom: 2px solid #007AFF;
-  border-right: 2px solid #007AFF;
+  border-bottom: 3px solid #007AFF;
+  border-right: 3px solid #007AFF;
 
   .item-image {
     //изображение
