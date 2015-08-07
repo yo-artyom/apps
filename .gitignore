@@ -14,8 +14,8 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-/config/database.yml
+#/config/database.yml
 config/initializers/secret_token.rb
-config/secrets.yml
+#config/secrets.yml
 # Ignore uploaded files
 /public/uploads
