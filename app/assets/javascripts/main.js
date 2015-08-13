@@ -24,7 +24,13 @@ ready = function() {
         $('.close').removeClass('is-visible');
     });
 
+    $(window).scroll(function(){
+       var windowScroll = $(window).scrollTop();
+       var windowHeight = $(window).height();
+       var documentHeight = $(document).height();
+        console.log (windowScroll + " "+windowHeight+" "+ documentHeight)
 
+    });
 
 };
 

@@ -124,9 +124,8 @@ html{
   width: 50%;
   float: left;
   &:nth-child(odd){
-    border-left: 3px solid #007AFF;
-  }
-}
+    border-right: 3px solid #007AFF;
+}}
 
 .apps{ //разметка для единичного товара
   position: relative;
@@ -137,7 +136,7 @@ html{
   float: right;
   border-collapse: collapse;
   border-bottom: 3px solid #007AFF;
-  border-right: 3px solid #007AFF;
+
 
   .item-image {
     //изображение
