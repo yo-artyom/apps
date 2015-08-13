@@ -1,5 +1,4 @@
 module MainPagesHelper
-
   def detect_device
     request.env['HTTP_USER_AGENT'].downcase
   end
